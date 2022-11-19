@@ -25,23 +25,23 @@ public class CameraManager : MonoBehaviour
     {
 
         //プレイヤーのポジション
-        //Vector3 pos = player.transform.position;
+        Vector3 pos = player.transform.position;
 
         //カメラのポジション
-        //transform.position = new Vector3(pos.x + offsetx, pos.y + offsety, pos.z + offsetz);
+        transform.position = new Vector3(pos.x + offsetx, pos.y + offsety, pos.z + offsetz);
 
-        //左シフトが押されている時
-        if (Input.GetKey(KeyCode.Q))
-        {
-            //ユニティちゃんを中心に-5f度回転
-            transform.RotateAround(player.transform.position, Vector3.up, -5f);
-        }
-        //右シフトが押されている時
-        else if (Input.GetKey(KeyCode.E))
-        {
-            //ユニティちゃんを中心に5f度回転
-            transform.RotateAround(player.transform.position, Vector3.up, 5f);
-        }
+        // //左シフトが押されている時
+        // if (Input.GetKey(KeyCode.Q))
+        // {
+        //     //ユニティちゃんを中心に-5f度回転
+        //     transform.RotateAround(player.transform.position, Vector3.up, -5f);
+        // }
+        // //右シフトが押されている時
+        // else if (Input.GetKey(KeyCode.E))
+        // {
+        //     //ユニティちゃんを中心に5f度回転
+        //     transform.RotateAround(player.transform.position, Vector3.up, 5f);
+        // }
 
     }
 }
