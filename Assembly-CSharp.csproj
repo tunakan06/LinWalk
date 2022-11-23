@@ -189,6 +189,7 @@
      <Compile Include="Assets/Utage/Scripts/GameLib/UI/NovelText/UguiNovelTextBrPageIcon.cs" />
      <Compile Include="Assets/Utage/Scripts/GameLib/Dictionary/SerializableDictionaryBinaryIO.cs" />
      <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/Extra/AdvCommandSendMessage.cs" />
+     <Compile Include="Assets/Scripts/CreateRandomPosition.cs" />
      <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/Effect/AdvCommandImageEffect.cs" />
      <Compile Include="Assets/Utage/Scripts/GameLib/UI/Image/Avatar/AvatarPattern.cs" />
      <Compile Include="Assets/Utage/Scripts/GameLib/Effect/LinkTransform.cs" />

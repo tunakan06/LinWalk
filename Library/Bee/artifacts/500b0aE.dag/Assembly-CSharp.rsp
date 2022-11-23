@@ -349,6 +349,7 @@
 "Assets/Scripts/Bazooka.cs"
 "Assets/Scripts/Bear.cs"
 "Assets/Scripts/CameraManager.cs"
+"Assets/Scripts/CreateRandomPosition.cs"
 "Assets/Scripts/Follow.cs"
 "Assets/Scripts/Follow_UI.cs"
 "Assets/Scripts/FootPlanting.cs"
