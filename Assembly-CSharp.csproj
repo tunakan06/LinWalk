@@ -593,6 +593,9 @@
      <Compile Include="Assets/Utage/Scripts/ADV/Scenario/AdvMacroData.cs" />
      <Compile Include="Assets/Utage/Scripts/ADV/Effect/AdvEffectManager.cs" />
      <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/Effect/AdvCommandPlayAnimation.cs" />
+     <Compile Include="Assets/Scripts/People.cs" />
+     <Compile Include="Assets/Scripts/Woman.cs" />
+     <Compile Include="Assets/Scripts/GameManager.cs" />
      <None Include="Assets/Utage/Sample/UnityChan/SD_unitychan/UnityChanShader/Shader/Unitychan_chara_fuku.shader" />
      <None Include="Assets/Utage/LocalizeText/SystemText.txt" />
      <None Include="Assets/Utage/LocalizeText/ErrorMsg.txt" />
