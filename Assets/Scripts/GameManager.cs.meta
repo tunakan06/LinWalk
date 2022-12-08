@@ -3,7 +3,12 @@ guid: 060c2516a9e09496da6e7084915fbb82
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - messageWindow: {fileID: 7937614541403375869, guid: 8e87125ad03184a76b36fcb670a6f6c8,
+      type: 3}
+  - talkingText: {instanceID: 0}
+  - nameText: {instanceID: 0}
+  - proceedingTalkSE: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

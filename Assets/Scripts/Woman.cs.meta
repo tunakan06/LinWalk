@@ -3,7 +3,9 @@ guid: 7b7ffa6360a104fea9f8ee5d1cd9ea9e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - speechBubbleOb: {fileID: 8914691902171767408, guid: 66feddbfe6fb04c8c8daf50243e838d3,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
