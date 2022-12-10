@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         messageWindowI = messageWindow.GetComponent<Image>();
+        nameText.text = "";
+        talkingText.text = "";
     }
 
     public void DisplayMessageWindow(List<string> words, string name)
