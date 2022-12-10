@@ -4,8 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - messageWindow: {fileID: 7937614541403375869, guid: 8e87125ad03184a76b36fcb670a6f6c8,
-      type: 3}
+  - messageWindow: {instanceID: 0}
   - talkingText: {instanceID: 0}
   - nameText: {instanceID: 0}
   - proceedingTalkSE: {instanceID: 0}

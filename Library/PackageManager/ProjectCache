@@ -5,22 +5,22 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638062345540000000
-    m_Hash: 3217800340
+      ticks: 638062534300000000
+    m_Hash: 1099546858
   m_LockFileStatus:
     m_FilePath: /Users/koubekisei/LinWalk/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638062345550000000
-    m_Hash: 2655279365
+      ticks: 638062534330000000
+    m_Hash: 1483745109
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: /Users/koubekisei/LinWalk/Packages
-m_EditorVersion: 2021.3.13f1 (9e7d58001ecf)
+m_EditorVersion: 2021.3.15f1 (e8e88683f834)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
@@ -226,12 +226,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 2.8.9
     nextVersion: 
-- packageId: com.unity.collab-proxy@1.17.6
+- packageId: com.unity.collab-proxy@1.17.7
   testable: 0
   isDirectDependency: 1
-  version: 1.17.6
+  version: 1.17.7
   source: 1
-  resolvedPath: /Users/koubekisei/LinWalk/Library/PackageCache/com.unity.collab-proxy@1.17.6
+  resolvedPath: /Users/koubekisei/LinWalk/Library/PackageCache/com.unity.collab-proxy@1.17.7
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -312,7 +312,6 @@ m_ResolvedPackages:
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     compatible:
-    - 1.17.6
     - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
@@ -330,7 +329,7 @@ m_ResolvedPackages:
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.services.core
-    version: 1.5.2
+    version: 1.6.0
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -361,23 +360,23 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638009928240000000
+  datePublishedTicks: 638036787040000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 3744f24b80468ef1336fbc234c93625c4a6287b0
+    revision: 1641a631fd39029595decb52bdfb641b32ed194c
     path: 
   unityLifecycle:
-    version: 1.17.6
+    version: 1.17.7
     nextVersion: 
-- packageId: com.unity.ide.rider@3.0.15
+- packageId: com.unity.ide.rider@3.0.16
   testable: 0
   isDirectDependency: 1
-  version: 3.0.15
+  version: 3.0.16
   source: 1
-  resolvedPath: /Users/koubekisei/LinWalk/Library/PackageCache/com.unity.ide.rider@3.0.15
+  resolvedPath: /Users/koubekisei/LinWalk/Library/PackageCache/com.unity.ide.rider@3.0.16
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -428,7 +427,6 @@ m_ResolvedPackages:
     - 3.0.16
     - 3.0.17
     compatible:
-    - 3.0.15
     - 3.0.16
     - 3.0.17
     verified: 3.0.17
@@ -449,16 +447,16 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637914298700000000
+  datePublishedTicks: 638011833630000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: b61ff0378932fdf03b5891e09c91728337de674c
+    revision: 9b718d58b8f7a34e564f2c79af6d2ca788e929d4
     path: 
   unityLifecycle:
-    version: 3.0.15
+    version: 3.0.16
     nextVersion: 
 - packageId: com.unity.ide.visualstudio@2.0.16
   testable: 0
@@ -2922,12 +2920,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.6
     nextVersion: 
-- packageId: com.unity.services.core@1.5.2
+- packageId: com.unity.services.core@1.6.0
   testable: 0
   isDirectDependency: 0
-  version: 1.5.2
+  version: 1.6.0
   source: 1
-  resolvedPath: /Users/koubekisei/LinWalk/Library/PackageCache/com.unity.services.core@1.5.2
+  resolvedPath: /Users/koubekisei/LinWalk/Library/PackageCache/com.unity.services.core@1.6.0
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -2965,10 +2963,9 @@ m_ResolvedPackages:
     - 1.6.0
     - 1.7.0
     compatible:
-    - 1.5.2
     - 1.6.0
     - 1.7.0
-    verified: 1.5.2
+    verified: 1.6.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2994,16 +2991,16 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638018550440000000
+  datePublishedTicks: 638030857680000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: e040465b79d519da3eae1f3ee97816020574dd5e
+    revision: 815a0c96703c69956fde4fc798e35dd8d0cc3af1
     path: 
   unityLifecycle:
-    version: 1.5.2
+    version: 1.6.0
     nextVersion: 
 - packageId: com.unity.nuget.newtonsoft-json@3.0.2
   testable: 0

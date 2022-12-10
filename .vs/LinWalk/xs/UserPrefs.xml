@@ -1,29 +1,30 @@
 ﻿<Properties StartupConfiguration="{22C0F9D2-910C-0E5A-841E-74B0C3E08FEE}|">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="be4caa9e-4f39-4e2a-a1bd-f221e084f812" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Woman.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMove.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CameraManager.cs" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="18" Column="1" />
-      <File FileName="Assets/Scripts/People.cs" Line="56" Column="1" />
+      <File FileName="Assets/Scripts/Woman.cs" Line="16" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LinWalk" expanded="True">
-            <Node name="Assets" selected="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>messageWindow.GetComponent&lt;Image&gt;()</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a285cb78-6fc2-42fe-970d-af98fe7e293b" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/koubekisei/LinWalk/Assets/Scripts/GameManager.cs" relfile="Assets/Scripts/GameManager.cs" line="26" column="1" />
-      <Breakpoint file="/Users/koubekisei/LinWalk/Assets/Scripts/People.cs" relfile="Assets/Scripts/People.cs" line="56" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -4,8 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - speechBubbleOb: {fileID: 8914691902171767408, guid: 66feddbfe6fb04c8c8daf50243e838d3,
-      type: 3}
+  - speechBubbleOb: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -1,0 +1,2 @@
+/Users/koubekisei/LinWalk/obj/Debug/Unity.2D.Sprite.Editor.csproj.AssemblyReference.cache
+/Users/koubekisei/LinWalk/obj/Debug/Unity.2D.Sprite.Editor.csproj.CoreCompileInputs.cache
