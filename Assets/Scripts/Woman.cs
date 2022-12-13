@@ -13,7 +13,7 @@ public class Woman : People
         //talkingWords.Add("Bye!");
         talkingWords.Add("こんにちは");
         talkingWords.Add("私はヒストリアさ");
-        talkingWords.Add("バイバイ！");
+        talkingWords.Add("またよろしくね！");
     }
 
     public override void Gender()

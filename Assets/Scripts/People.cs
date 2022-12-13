@@ -54,6 +54,7 @@ public class People : MonoBehaviour
                 if (gameManager.messageWindow.activeSelf == false)
                 {
                     gameManager.DisplayMessageWindow(talkingWords, this.gameObject.name);
+                    gameManager.ProceedingTalk(audioSource, audioPitch);
                 }
                 else
                 {

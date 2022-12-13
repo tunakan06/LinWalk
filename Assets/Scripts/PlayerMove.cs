@@ -68,7 +68,7 @@ public class PlayerMove : MonoBehaviour
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
         // お辞儀
-        if (Input.GetKey(KeyCode.Z) && (move.magnitude == 0.0f))
+        if (Input.GetKey(KeyCode.F) && (move.magnitude == 0.0f))
         {
             animator.SetBool("Bowing", true);
         }
