@@ -51,9 +51,13 @@ public class People : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                var diff = (player.transform.position - transform.position).normalized;
+                transform.rotation = Quaternion.LookRotation(diff);
+
                 if (gameManager.messageWindow.activeSelf == false)
                 {
                     gameManager.DisplayMessageWindow(talkingWords, this.gameObject.name);
+                    Debug.Log("aaaa");
                     gameManager.ProceedingTalk(audioSource, audioPitch);
                 }
                 else

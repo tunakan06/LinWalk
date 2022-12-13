@@ -30,16 +30,20 @@ public class GameManager : MonoBehaviour
         charaTalkingWords = new List<string>(words);
         messageWindow.SetActive(true);
         talkingText.text = charaTalkingWords[0];
-        charaTalkingWords.RemoveAt(0);
+        //charaTalkingWords.RemoveAt(0);
     }
 
     public void ProceedingTalk(AudioSource charaAS, float pitch)
     {
         if (charaTalkingWords.Count > 0)
         {
-            if (talkingNow == true) return;
+            if (talkingNow == true){
+                Debug.Log("cccc");
+                return;
+                }
             // talkingText.text = charaTalkingWords[0];
             StartCoroutine(TalkText(charaAS, pitch));
+            Debug.Log("bbbb");
 
             //audioSourceSE.PlayOneShot(proceedingTalkSE);
         }

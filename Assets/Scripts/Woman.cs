@@ -11,6 +11,7 @@ public class Woman : People
         //talkingWords.Add("Hi!");
         //talkingWords.Add("Im historia");
         //talkingWords.Add("Bye!");
+        
         talkingWords.Add("こんにちは");
         talkingWords.Add("私はヒストリアさ");
         talkingWords.Add("またよろしくね！");
