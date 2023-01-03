@@ -28,11 +28,7 @@ public class CreateRandomPosition : MonoBehaviour
         //if(time > 1.0f)
         if(number <= 16)
 		{
-            // rangeAとrangeBのx座標の範囲内でランダムな数値を作成
             float x = Random.Range(-30f, 30f);
-            // rangeAとrangeBのy座標の範囲内でランダムな数値を作成
-            //float y = Random.Range(rangeA.position.y, rangeB.position.y);
-            // rangeAとrangeBのz座標の範囲内でランダムな数値を作成
             float z = Random.Range(-18f, 18f);
 
             // GameObjectを上記で決まったランダムな場所に生成

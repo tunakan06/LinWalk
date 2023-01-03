@@ -18,7 +18,7 @@ public class People : MonoBehaviour
     private AudioSource audioSource;
     public float audioPitch;
     private CapsuleCollider capsuleCollider;
-
+    protected int humanCount = 0;
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -53,11 +53,11 @@ public class People : MonoBehaviour
             {
                 var diff = (player.transform.position - transform.position).normalized;
                 transform.rotation = Quaternion.LookRotation(diff);
-
+                
                 if (gameManager.messageWindow.activeSelf == false)
                 {
+                    humanCount++;
                     gameManager.DisplayMessageWindow(talkingWords, this.gameObject.name);
-                    Debug.Log("aaaa");
                     gameManager.ProceedingTalk(audioSource, audioPitch);
                 }
                 else
@@ -67,6 +67,11 @@ public class People : MonoBehaviour
             }
         }
     }
+
+    /// <summary>
+    /// スピーチバブルを表示する
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator DisplaySB()
     {
         speechBubbleOb.SetActive(true);
@@ -79,6 +84,10 @@ public class People : MonoBehaviour
         yield break;
     }
 
+    /// <summary>
+    /// スピーチバブルを閉じる
+    /// </summary>
+    /// <returns></returns>
     public IEnumerator CloseSB()
     {
         float c = 0.05f;

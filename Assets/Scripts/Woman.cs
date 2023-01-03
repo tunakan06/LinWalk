@@ -8,12 +8,8 @@ public class Woman : People
 {
     public override void AddWords()
     {
-        //talkingWords.Add("Hi!");
-        //talkingWords.Add("Im historia");
-        //talkingWords.Add("Bye!");
-        
         talkingWords.Add("こんにちは");
-        talkingWords.Add("私はヒストリアさ");
+        talkingWords.Add(humanCount + "人目の私だよ。ようこそ");
         talkingWords.Add("またよろしくね！");
     }
 

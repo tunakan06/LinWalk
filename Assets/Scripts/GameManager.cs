@@ -23,6 +23,11 @@ public class GameManager : MonoBehaviour
         talkingText.text = "";
     }
 
+    /// <summary>
+    /// メッセージウィンドウを表示する
+    /// </summary>
+    /// <param name="words"></param>
+    /// <param name="name"></param>
     public void DisplayMessageWindow(List<string> words, string name)
     {
         nameText.text = name;
@@ -33,17 +38,21 @@ public class GameManager : MonoBehaviour
         //charaTalkingWords.RemoveAt(0);
     }
 
+    /// <summary>
+    /// 話を進める
+    /// </summary>
+    /// <param name="charaAS"></param>
+    /// <param name="pitch"></param>
     public void ProceedingTalk(AudioSource charaAS, float pitch)
     {
         if (charaTalkingWords.Count > 0)
         {
-            if (talkingNow == true){
-                Debug.Log("cccc");
+            if (talkingNow == true)
+            {
                 return;
-                }
+            }
             // talkingText.text = charaTalkingWords[0];
             StartCoroutine(TalkText(charaAS, pitch));
-            Debug.Log("bbbb");
 
             //audioSourceSE.PlayOneShot(proceedingTalkSE);
         }
@@ -53,11 +62,21 @@ public class GameManager : MonoBehaviour
             //audioSourceSE.PlayOneShot(proceedingTalkSE);
         }
     }
+
+    /// <summary>
+    /// メッセージウィンドウを閉じる
+    /// </summary>
     public void CloseMessageWindow()
     {
         messageWindow.SetActive(false);
     }
 
+    /// <summary>
+    /// テキストを話す
+    /// </summary>
+    /// <param name="charaAS"></param>
+    /// <param name="pitch"></param>
+    /// <returns></returns>
     private IEnumerator TalkText(AudioSource charaAS, float pitch)
     {
         talkingNow = true;
@@ -79,5 +98,4 @@ public class GameManager : MonoBehaviour
         charaTalkingWords.RemoveAt(0);
         talkingNow = false;
     }
-
 }
