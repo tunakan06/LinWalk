@@ -371,6 +371,7 @@
 "Assets/Scripts/ScaleCapsule.cs"
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/TargetMatching.cs"
+"Assets/Scripts/Teddy.cs"
 "Assets/Scripts/TextLayerController.cs"
 "Assets/Scripts/ThirdPersonCamera.cs"
 "Assets/Scripts/Woman.cs"

@@ -356,6 +356,7 @@
      <Compile Include="Assets/Utage/Scripts/GameLib/StringGrid/StringGridRow.cs" />
      <Compile Include="Assets/Utage/Scripts/GameLib/Util/EditorSub/AssetBuildTimeStamp.cs" />
      <Compile Include="Assets/Utage/Scripts/ADV/Extra/AdvOpenGallery.cs" />
+     <Compile Include="Assets/Scripts/Teddy.cs" />
      <Compile Include="Assets/Utage/Scripts/GameLib/Math/Easing.cs" />
      <Compile Include="Assets/Utage/Scripts/GameLib/Util/DontDestoryOnLoad.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />

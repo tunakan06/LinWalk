@@ -7,6 +7,9 @@ public class CreateRandomPosition : MonoBehaviour
     [SerializeField]
     [Tooltip("生成するGameObject")]
     private GameObject createPrefab;
+    [SerializeField]
+    [Tooltip("生成するGameObject")]
+    private GameObject createPrefabBear;
 
     // 経過時間
     private float time;
@@ -15,7 +18,7 @@ public class CreateRandomPosition : MonoBehaviour
     private int number;
 
     void Start(){
-        number = 0;
+        number = 1;
     }
 
     // Update is called once per frame
@@ -32,7 +35,13 @@ public class CreateRandomPosition : MonoBehaviour
             float z = Random.Range(-18f, 18f);
 
             // GameObjectを上記で決まったランダムな場所に生成
-            Instantiate(createPrefab, new Vector3(x,0,z), createPrefab.transform.rotation);
+            if(number < 16){
+                Instantiate(createPrefab, new Vector3(x,0,z), createPrefab.transform.rotation);
+            }
+            else if(number == 16){
+                Instantiate(createPrefabBear, new Vector3(x,0,z), createPrefabBear.transform.rotation);
+            }
+            
 
             // 経過時間リセット
             //time = 0f;

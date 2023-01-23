@@ -9,7 +9,7 @@ public class Woman : People
     public override void AddWords()
     {
         talkingWords.Add("こんにちは");
-        talkingWords.Add(humanCount + "人目の私だよ。ようこそ");
+        talkingWords.Add("元気かい？");
         talkingWords.Add("またよろしくね！");
     }
 

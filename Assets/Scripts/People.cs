@@ -18,7 +18,6 @@ public class People : MonoBehaviour
     private AudioSource audioSource;
     public float audioPitch;
     private CapsuleCollider capsuleCollider;
-    protected int humanCount = 0;
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -56,7 +55,6 @@ public class People : MonoBehaviour
                 
                 if (gameManager.messageWindow.activeSelf == false)
                 {
-                    humanCount++;
                     gameManager.DisplayMessageWindow(talkingWords, this.gameObject.name);
                     gameManager.ProceedingTalk(audioSource, audioPitch);
                 }
