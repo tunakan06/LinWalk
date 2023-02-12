@@ -73,11 +73,11 @@ public class People : MonoBehaviour
     private IEnumerator DisplaySB()
     {
         speechBubbleOb.SetActive(true);
-        float c = 0.05f;
-        while (speechBubbleOb.transform.localScale.x < 0.7f)
+        float c = 0.01f;
+        while (speechBubbleOb.transform.localScale.x < 0.01f)
         {
-            yield return new WaitForSeconds(0.01f);
             speechBubbleOb.transform.localScale += new Vector3(c, c, c);
+            yield return new WaitForSeconds(0.01f);
         }
         yield break;
     }

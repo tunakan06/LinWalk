@@ -1,30 +1,31 @@
 ﻿<Properties StartupConfiguration="{22C0F9D2-910C-0E5A-841E-74B0C3E08FEE}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="be4caa9e-4f39-4e2a-a1bd-f221e084f812" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Woman.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3d68445b-e19b-438a-9df5-896f32fb3a6a" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMove.cs">
     <Files>
-      <File FileName="Assets/Scripts/Woman.cs" Line="16" Column="32" />
+      <File FileName="Assets/Scripts/Woman.cs" />
+      <File FileName="Assets/Scripts/People.cs" Line="77" Column="60" />
+      <File FileName="Assets/Scripts/Teddy.cs" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="31" Column="25" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LinWalk" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="PlayerMove.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>messageWindow.GetComponent&lt;Image&gt;()</Value>
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>
