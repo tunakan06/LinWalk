@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(People))]
+//[CustomEditor(typeof(People))]
 public class Woman : People
 {
     public override void AddWords()

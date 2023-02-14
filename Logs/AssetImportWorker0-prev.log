@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61893
+63353
 Successfully changed project path to: /Users/koubekisei/LinWalk
 /Users/koubekisei/LinWalk
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,11 +54,11 @@ Successfully changed project path to: /Users/koubekisei/LinWalk
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8667871872] Host "[IP] 192.168.5.4 [Port] 0 [Flags] 2 [Guid] 3993243051 [EditorId] 3993243051 [Version] 1048832 [Id] OSXEditor(0,koubekiseinoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8667871872] Host "[IP] 192.168.3.4 [Port] 0 [Flags] 2 [Guid] 851273702 [EditorId] 851273702 [Version] 1048832 [Id] OSXEditor(0,koubekiseinoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8667871872] Host "[IP] 192.168.5.4 [Port] 0 [Flags] 2 [Guid] 3993243051 [EditorId] 3993243051 [Version] 1048832 [Id] OSXEditor(0,koubekiseinoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8667871872] Host "[IP] 192.168.3.4 [Port] 0 [Flags] 2 [Guid] 851273702 [EditorId] 851273702 [Version] 1048832 [Id] OSXEditor(0,koubekiseinoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 26.25 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 28.20 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.15f1 (e8e88683f834)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -73,7 +73,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56838
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -82,7 +82,7 @@ Register platform support module: /Applications/Unity/Hub/Editor/2021.3.15f1/Pla
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.000758 seconds.
+Registered in 0.002367 seconds.
 Native extension for LinuxStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
@@ -92,1676 +92,40 @@ Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 28.74 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 30.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.328 seconds
+- Completed reload, in  0.428 seconds
 Domain Reload Profiling:
-	ReloadAssembly (329ms)
-		BeginReloadAssembly (27ms)
+	ReloadAssembly (428ms)
+		BeginReloadAssembly (72ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (248ms)
-			LoadAssemblies (26ms)
+		EndReloadAssembly (293ms)
+			LoadAssemblies (74ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (61ms)
+			SetupTypeCache (71ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (15ms)
-			SetupLoadedEditorAssemblies (150ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (177ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (64ms)
+				InitializePlatformSupportModulesInManaged (82ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (29ms)
-				BeforeProcessingInitializeOnLoad (0ms)
-				ProcessInitializeOnLoadAttributes (37ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
+				RefreshPlugins (30ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (43ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001023 seconds.
+Registered in 0.001029 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.603 seconds
-Domain Reload Profiling:
-	ReloadAssembly (604ms)
-		BeginReloadAssembly (161ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (122ms)
-		EndReloadAssembly (379ms)
-			LoadAssemblies (46ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (120ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (162ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (25ms)
-				ProcessInitializeOnLoadAttributes (109ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launching external process: /Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2541 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (116.6 KB). Loaded Objects now: 3016.
-Memory consumption went from 96.4 MB to 96.3 MB.
-Total: 2.372917 ms (FindLiveObjects: 0.079500 ms CreateObjectMapping: 0.032459 ms MarkObjects: 2.193125 ms  DeleteObjects: 0.067250 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 720459.495488 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Woman uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
-Teddy uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
- -> (artifact id: '5f88f45f3febe637fd3d92e0bdc0cf7a') in 0.448063 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.580594 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7565421ecf4fa617b386eb66b27c285') in 0.024772 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.505090 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ed35007c5d968506131b38409ee50f') in 0.019722 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001000 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x17b62b000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.558 seconds
-Domain Reload Profiling:
-	ReloadAssembly (559ms)
-		BeginReloadAssembly (80ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (423ms)
-			LoadAssemblies (33ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (145ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (182ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (28ms)
-				ProcessInitializeOnLoadAttributes (119ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3027.
-Memory consumption went from 175.9 MB to 175.8 MB.
-Total: 2.539667 ms (FindLiveObjects: 0.113125 ms CreateObjectMapping: 0.042875 ms MarkObjects: 2.356291 ms  DeleteObjects: 0.026792 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 133.368202 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Woman uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
-Teddy uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
- -> (artifact id: '800e38404d1fbad6fef55c8dc2426b2b') in 0.060199 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.138304 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2dbfb6886346ee4e14687ced2f99aca') in 0.018756 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.813200 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6559157f7a9cb213d7ede10c9f8fa04') in 0.018854 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.201686 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18be8089a38f9582c03cfa62d5fb0b2f') in 0.018664 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.545833 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033c4a76772c3c30ea3e7eac6f7658a2') in 0.018584 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.185395 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c2ed30f6e780bd947914f9d69fa9aa') in 0.019257 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.863031 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32bd2ef8f24a08e8ec5fdf7041a5f07') in 0.018981 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.457899 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ce19830c59296ffe14855ca6e54aa9') in 0.018553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.126554 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d97c7a42c2ce9217994d32d409fa86') in 0.019017 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 58.465972 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aa467f57284569c0db8699cd672de3c') in 0.018433 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.429802 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '176843b194058227cd529b019002c5b6') in 0.018264 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.227904 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b088ed429caab46f2c6117a9789a65') in 0.018701 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001345 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179e5b000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.552 seconds
-Domain Reload Profiling:
-	ReloadAssembly (553ms)
-		BeginReloadAssembly (78ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (419ms)
-			LoadAssemblies (32ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (142ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (181ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (28ms)
-				ProcessInitializeOnLoadAttributes (118ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3030.
-Memory consumption went from 180.1 MB to 180.0 MB.
-Total: 2.737167 ms (FindLiveObjects: 0.310709 ms CreateObjectMapping: 0.132625 ms MarkObjects: 2.270584 ms  DeleteObjects: 0.022584 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001083 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x17b287000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.557 seconds
-Domain Reload Profiling:
-	ReloadAssembly (558ms)
-		BeginReloadAssembly (80ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (422ms)
-			LoadAssemblies (32ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (144ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (182ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (118ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.5 KB). Loaded Objects now: 3033.
-Memory consumption went from 183.8 MB to 183.7 MB.
-Total: 2.482791 ms (FindLiveObjects: 0.118042 ms CreateObjectMapping: 0.052333 ms MarkObjects: 2.287875 ms  DeleteObjects: 0.024041 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 106.315388 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Woman uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
-Teddy uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
- -> (artifact id: '8ec127cb6615bb68af2b208d10c2e184') in 0.060190 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001422 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179cdb000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.559 seconds
-Domain Reload Profiling:
-	ReloadAssembly (560ms)
-		BeginReloadAssembly (81ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (424ms)
-			LoadAssemblies (30ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (144ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (185ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (120ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3036.
-Memory consumption went from 188.0 MB to 187.9 MB.
-Total: 2.793584 ms (FindLiveObjects: 0.114167 ms CreateObjectMapping: 0.046208 ms MarkObjects: 2.608042 ms  DeleteObjects: 0.024500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001425 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.528 seconds
-Domain Reload Profiling:
-	ReloadAssembly (529ms)
-		BeginReloadAssembly (67ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (410ms)
-			LoadAssemblies (29ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (133ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (183ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (28ms)
-				ProcessInitializeOnLoadAttributes (119ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.5 KB). Loaded Objects now: 3039.
-Memory consumption went from 191.7 MB to 191.6 MB.
-Total: 2.844125 ms (FindLiveObjects: 0.128167 ms CreateObjectMapping: 0.053125 ms MarkObjects: 2.634709 ms  DeleteObjects: 0.027500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 597.034969 seconds.
-  path: Assets/Pictures/images.png
-  artifactKey: Guid(f90a3badc835545ef8bb5b4813bb5624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pictures/images.png using Guid(f90a3badc835545ef8bb5b4813bb5624) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Woman uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
-Teddy uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
- -> (artifact id: 'c82421b3628201459eb9c65779329498') in 0.490290 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001071 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.582 seconds
-Domain Reload Profiling:
-	ReloadAssembly (583ms)
-		BeginReloadAssembly (97ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (430ms)
-			LoadAssemblies (36ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (151ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (183ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (120ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.5 KB). Loaded Objects now: 3046.
-Memory consumption went from 274.2 MB to 274.1 MB.
-Total: 2.853209 ms (FindLiveObjects: 0.141208 ms CreateObjectMapping: 0.073334 ms MarkObjects: 2.612708 ms  DeleteObjects: 0.025292 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001295 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.559 seconds
-Domain Reload Profiling:
-	ReloadAssembly (560ms)
-		BeginReloadAssembly (81ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (423ms)
-			LoadAssemblies (33ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (144ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (183ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (120ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.5 KB). Loaded Objects now: 3049.
-Memory consumption went from 277.8 MB to 277.7 MB.
-Total: 2.559667 ms (FindLiveObjects: 0.115000 ms CreateObjectMapping: 0.054584 ms MarkObjects: 2.368917 ms  DeleteObjects: 0.020541 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 692.033595 seconds.
-  path: Assets/Prefabs/Woman.prefab
-  artifactKey: Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Woman.prefab using Guid(fd6ac0db2ca994c9fb02774118ed7eba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Woman uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
-Teddy uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
- -> (artifact id: 'b018d67b618fe342f602516ae7d4cdcc') in 0.062265 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 33.508238 seconds.
-  path: Assets/Scripts/People.cs
-  artifactKey: Guid(5be95741521494de289d7c485d51b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/People.cs using Guid(5be95741521494de289d7c485d51b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159aa8b6d968738c619613b0adcf05aa') in 0.102217 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001232 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.520 seconds
-Domain Reload Profiling:
-	ReloadAssembly (520ms)
-		BeginReloadAssembly (85ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (383ms)
-			LoadAssemblies (34ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (134ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (162ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (27ms)
-				ProcessInitializeOnLoadAttributes (105ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.5 KB). Loaded Objects now: 3052.
-Memory consumption went from 328.6 MB to 328.6 MB.
-Total: 2.378459 ms (FindLiveObjects: 0.106166 ms CreateObjectMapping: 0.040667 ms MarkObjects: 2.201000 ms  DeleteObjects: 0.030167 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001389 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x17b313000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.546 seconds
-Domain Reload Profiling:
-	ReloadAssembly (546ms)
-		BeginReloadAssembly (72ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (422ms)
-			LoadAssemblies (32ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (142ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (181ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (118ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3055.
-Memory consumption went from 332.3 MB to 332.2 MB.
-Total: 2.608208 ms (FindLiveObjects: 0.124583 ms CreateObjectMapping: 0.047500 ms MarkObjects: 2.408792 ms  DeleteObjects: 0.026833 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001404 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179cdb000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.492 seconds
-Domain Reload Profiling:
-	ReloadAssembly (492ms)
-		BeginReloadAssembly (67ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (374ms)
-			LoadAssemblies (30ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (129ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (161ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (26ms)
-				ProcessInitializeOnLoadAttributes (106ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3058.
-Memory consumption went from 336.0 MB to 336.0 MB.
-Total: 2.258917 ms (FindLiveObjects: 0.105459 ms CreateObjectMapping: 0.040833 ms MarkObjects: 2.092833 ms  DeleteObjects: 0.019292 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001435 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.553 seconds
-Domain Reload Profiling:
-	ReloadAssembly (554ms)
-		BeginReloadAssembly (78ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (421ms)
-			LoadAssemblies (30ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (145ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (180ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (117ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.5 KB). Loaded Objects now: 3061.
-Memory consumption went from 339.7 MB to 339.6 MB.
-Total: 2.664042 ms (FindLiveObjects: 0.122958 ms CreateObjectMapping: 0.051000 ms MarkObjects: 2.465125 ms  DeleteObjects: 0.024375 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001404 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.532 seconds
-Domain Reload Profiling:
-	ReloadAssembly (533ms)
-		BeginReloadAssembly (66ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (415ms)
-			LoadAssemblies (28ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (139ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (182ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (118ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3064.
-Memory consumption went from 343.4 MB to 343.3 MB.
-Total: 2.684084 ms (FindLiveObjects: 0.122625 ms CreateObjectMapping: 0.046917 ms MarkObjects: 2.490542 ms  DeleteObjects: 0.023459 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001439 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.494 seconds
-Domain Reload Profiling:
-	ReloadAssembly (495ms)
-		BeginReloadAssembly (66ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (377ms)
-			LoadAssemblies (29ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (129ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (163ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (26ms)
-				ProcessInitializeOnLoadAttributes (107ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.5 KB). Loaded Objects now: 3067.
-Memory consumption went from 347.1 MB to 347.0 MB.
-Total: 2.329709 ms (FindLiveObjects: 0.111166 ms CreateObjectMapping: 0.047875 ms MarkObjects: 2.147209 ms  DeleteObjects: 0.022958 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001384 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.527 seconds
-Domain Reload Profiling:
-	ReloadAssembly (528ms)
-		BeginReloadAssembly (66ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (403ms)
-			LoadAssemblies (29ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (133ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (179ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (117ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.5 KB). Loaded Objects now: 3070.
-Memory consumption went from 350.8 MB to 350.7 MB.
-Total: 2.493833 ms (FindLiveObjects: 0.111000 ms CreateObjectMapping: 0.044875 ms MarkObjects: 2.307084 ms  DeleteObjects: 0.029958 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001065 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.548 seconds
-Domain Reload Profiling:
-	ReloadAssembly (548ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (405ms)
-			LoadAssemblies (40ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (137ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (175ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (113ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3073.
-Memory consumption went from 354.6 MB to 354.5 MB.
-Total: 3.147333 ms (FindLiveObjects: 0.114209 ms CreateObjectMapping: 0.039334 ms MarkObjects: 2.974750 ms  DeleteObjects: 0.018666 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 503.207252 seconds.
-  path: Assets/Scripts/People.cs
-  artifactKey: Guid(5be95741521494de289d7c485d51b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/People.cs using Guid(5be95741521494de289d7c485d51b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c7fc2572d4bf666c7d1cd26c4b69c1') in 0.004211 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001001 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.570 seconds
-Domain Reload Profiling:
-	ReloadAssembly (571ms)
-		BeginReloadAssembly (88ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (427ms)
-			LoadAssemblies (34ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (147ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (182ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (119ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3076.
-Memory consumption went from 358.2 MB to 358.2 MB.
-Total: 2.174917 ms (FindLiveObjects: 0.102167 ms CreateObjectMapping: 0.043208 ms MarkObjects: 2.009458 ms  DeleteObjects: 0.019667 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001566 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.500 seconds
-Domain Reload Profiling:
-	ReloadAssembly (500ms)
-		BeginReloadAssembly (67ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (381ms)
-			LoadAssemblies (30ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (129ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (164ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (26ms)
-				ProcessInitializeOnLoadAttributes (108ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3079.
-Memory consumption went from 361.8 MB to 361.7 MB.
-Total: 2.115666 ms (FindLiveObjects: 0.102042 ms CreateObjectMapping: 0.037458 ms MarkObjects: 1.956541 ms  DeleteObjects: 0.019125 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001409 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.530 seconds
-Domain Reload Profiling:
-	ReloadAssembly (530ms)
-		BeginReloadAssembly (67ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (410ms)
-			LoadAssemblies (30ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (134ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (181ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (118ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3082.
-Memory consumption went from 365.2 MB to 365.1 MB.
-Total: 2.826375 ms (FindLiveObjects: 0.112500 ms CreateObjectMapping: 0.048750 ms MarkObjects: 2.639833 ms  DeleteObjects: 0.024750 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 489.321105 seconds.
-  path: Assets/Scripts/People.cs
-  artifactKey: Guid(5be95741521494de289d7c485d51b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/People.cs using Guid(5be95741521494de289d7c485d51b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17a9578ec60c57531bb9468ca7e46cd') in 0.005604 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.845513 seconds.
-  path: Assets/Scripts/People.cs
-  artifactKey: Guid(5be95741521494de289d7c485d51b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/People.cs using Guid(5be95741521494de289d7c485d51b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba1fc29089e9d0e0adea4d855a90c23') in 0.000650 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001401 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.524 seconds
-Domain Reload Profiling:
-	ReloadAssembly (524ms)
-		BeginReloadAssembly (73ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (397ms)
-			LoadAssemblies (30ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (137ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (171ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (27ms)
-				ProcessInitializeOnLoadAttributes (113ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3085.
-Memory consumption went from 369.0 MB to 368.9 MB.
-Total: 2.282750 ms (FindLiveObjects: 0.108166 ms CreateObjectMapping: 0.042375 ms MarkObjects: 2.109167 ms  DeleteObjects: 0.022167 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001439 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179f73000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.528 seconds
-Domain Reload Profiling:
-	ReloadAssembly (528ms)
-		BeginReloadAssembly (67ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (410ms)
-			LoadAssemblies (28ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (137ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (180ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (28ms)
-				ProcessInitializeOnLoadAttributes (118ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.5 KB). Loaded Objects now: 3088.
-Memory consumption went from 372.7 MB to 372.6 MB.
-Total: 3.100042 ms (FindLiveObjects: 0.129625 ms CreateObjectMapping: 0.058042 ms MarkObjects: 2.888625 ms  DeleteObjects: 0.023042 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1267.640762 seconds.
-  path: Assets/Characters/Teddy/Textures/Teddy_DIF.psd
-  artifactKey: Guid(a01325872100d2949951914e214c25ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Teddy/Textures/Teddy_DIF.psd using Guid(a01325872100d2949951914e214c25ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Woman uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
-Teddy uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
- -> (artifact id: 'b6ba62a79a5c9c021ec55616d568556f') in 0.573281 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Characters/Teddy/Textures/Teddy_NM.png
-  artifactKey: Guid(2e0a0a413e874f14393a2e8a2ea459ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Teddy/Textures/Teddy_NM.png using Guid(2e0a0a413e874f14393a2e8a2ea459ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a28b6f1dc4cd439b66940a337c9524') in 0.059597 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001149 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179f73000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.523 seconds
-Domain Reload Profiling:
-	ReloadAssembly (524ms)
-		BeginReloadAssembly (75ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (394ms)
-			LoadAssemblies (31ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (136ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (171ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (28ms)
-				ProcessInitializeOnLoadAttributes (112ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3094.
-Memory consumption went from 455.3 MB to 455.2 MB.
-Total: 2.137334 ms (FindLiveObjects: 0.099708 ms CreateObjectMapping: 0.038083 ms MarkObjects: 1.979709 ms  DeleteObjects: 0.019500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001399 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179e5b000 may have been prematurely finalized
 Native extension for LinuxStandalone target not found
 Native extension for AppleTV target not found
 Native extension for iOS target not found
@@ -1771,40 +135,44 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.482 seconds
+- Completed reload, in  0.640 seconds
 Domain Reload Profiling:
-	ReloadAssembly (482ms)
-		BeginReloadAssembly (68ms)
+	ReloadAssembly (640ms)
+		BeginReloadAssembly (159ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (365ms)
-			LoadAssemblies (29ms)
+			CreateAndSetChildDomain (119ms)
+		EndReloadAssembly (416ms)
+			LoadAssemblies (42ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (126ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (158ms)
+			SetupTypeCache (135ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (175ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
+				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (26ms)
-				ProcessInitializeOnLoadAttributes (103ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
+				ProcessInitializeOnLoadAttributes (118ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3097.
-Memory consumption went from 459.0 MB to 458.9 MB.
-Total: 2.061416 ms (FindLiveObjects: 0.103041 ms CreateObjectMapping: 0.039250 ms MarkObjects: 1.901042 ms  DeleteObjects: 0.017833 ms)
+Unloading 2541 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (116.6 KB). Loaded Objects now: 3016.
+Memory consumption went from 95.3 MB to 95.2 MB.
+Total: 2.319834 ms (FindLiveObjects: 0.099417 ms CreateObjectMapping: 0.038583 ms MarkObjects: 2.104833 ms  DeleteObjects: 0.076625 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1817,282 +185,220 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 306.689603 seconds.
-  path: Assets/Prefabs/TeddyBear.prefab
-  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Teddy uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
-Woman uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
- -> (artifact id: '6c6beb2afd16790f6bbcad06812ca6d8') in 0.035426 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001143 seconds.
+Registered in 0.001002 seconds.
 Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
+Thread 0x2a2587000 may have been prematurely finalized
 Native extension for LinuxStandalone target not found
 Native extension for AppleTV target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.519 seconds
+- Completed reload, in  0.512 seconds
 Domain Reload Profiling:
-	ReloadAssembly (519ms)
-		BeginReloadAssembly (69ms)
+	ReloadAssembly (512ms)
+		BeginReloadAssembly (66ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (2ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (398ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (395ms)
 			LoadAssemblies (29ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (132ms)
+			SetupTypeCache (130ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (180ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (177ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (117ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.24 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3100.
-Memory consumption went from 463.0 MB to 462.9 MB.
-Total: 3.133708 ms (FindLiveObjects: 0.131833 ms CreateObjectMapping: 0.069292 ms MarkObjects: 2.905167 ms  DeleteObjects: 0.026875 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 65.664350 seconds.
-  path: Assets/Prefabs/TeddyBear.prefab
-  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Teddy uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
-Woman uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
- -> (artifact id: 'df66317db55fe6e124db73ced9e76395') in 0.032682 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001391 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.534 seconds
-Domain Reload Profiling:
-	ReloadAssembly (535ms)
-		BeginReloadAssembly (69ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (414ms)
-			LoadAssemblies (30ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (137ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (182ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (118ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.7 KB). Loaded Objects now: 3103.
-Memory consumption went from 467.0 MB to 466.9 MB.
-Total: 2.544500 ms (FindLiveObjects: 0.127917 ms CreateObjectMapping: 0.062542 ms MarkObjects: 2.330083 ms  DeleteObjects: 0.023584 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 266.740520 seconds.
-  path: Assets/Scripts/People.cs
-  artifactKey: Guid(5be95741521494de289d7c485d51b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/People.cs using Guid(5be95741521494de289d7c485d51b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0711444e527951fc76f7b93133b25829') in 0.005143 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 67.686755 seconds.
-  path: Assets/Prefabs/TeddyBear.prefab
-  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Teddy uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
-Woman uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
-
- -> (artifact id: '53225fd2c8100f517dc30ed8600de147') in 0.040161 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001417 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x179ee7000 may have been prematurely finalized
-Native extension for LinuxStandalone target not found
-Native extension for AppleTV target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.565 seconds
-Domain Reload Profiling:
-	ReloadAssembly (566ms)
-		BeginReloadAssembly (86ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (423ms)
-			LoadAssemblies (32ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (146ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (182ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (28ms)
+				BeforeProcessingInitializeOnLoad (27ms)
 				ProcessInitializeOnLoadAttributes (119ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (92.6 KB). Loaded Objects now: 3106.
-Memory consumption went from 471.0 MB to 470.9 MB.
-Total: 2.496000 ms (FindLiveObjects: 0.123459 ms CreateObjectMapping: 0.048875 ms MarkObjects: 2.300166 ms  DeleteObjects: 0.022958 ms)
+Unloading 18 unused Assets / (92.5 KB). Loaded Objects now: 3019.
+Memory consumption went from 94.1 MB to 94.0 MB.
+Total: 2.975333 ms (FindLiveObjects: 0.112083 ms CreateObjectMapping: 0.048875 ms MarkObjects: 2.787750 ms  DeleteObjects: 0.025708 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 726638.272917 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Teddy uses the CustomEditor attribute but does not inherit from Editor.
+You must inherit from Editor. See the Editor class script documentation.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
+UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
+UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
+
+Woman uses the CustomEditor attribute but does not inherit from Editor.
+You must inherit from Editor. See the Editor class script documentation.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.CustomEditorAttributes:Rebuild () (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:145)
+UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:34)
+UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs:26)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:18)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:9)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/CustomEditorAttributes.cs Line: 145)
+
+ -> (artifact id: 'efafe94b1bfd1a675742e0a76c5281b6') in 0.186626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 168.338309 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff3cc340883d8ff5e20597ec6eeab32a') in 0.031673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.126667 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34a36d755ae1d0a0731444afbeee49c7') in 0.012355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.040001 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2d58b764e79657536c89c8dc225a29') in 0.011982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.017952 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c1b2fde079c33c8d772736bf41c8dea') in 0.012724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.053466 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f26d8b514fb58f4753210b5c48c3c5c') in 0.012431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.333609 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eadee70fa969e08849302bedadaed0e0') in 0.012610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.499047 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e80e4a87b4cccb43210cedbf23c476') in 0.012182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.580277 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cef7d332888993dbee18cb7abaf6545') in 0.012148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.097044 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6384ef220099a9a14ecfd31a423568a') in 0.012516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.850065 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a7d1c928743aa98b60606d400aceea4') in 0.012505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.301020 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33621c5881f5c5fbfe139cb625742261') in 0.013892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.067026 seconds.
+  path: Assets/Prefabs/TeddyBear.prefab
+  artifactKey: Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TeddyBear.prefab using Guid(2d21ef001ff844a1d99c44280c861ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408309d981b0c8203a45e85c56595b74') in 0.012357 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001341 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2a2587000 may have been prematurely finalized
+Native extension for LinuxStandalone target not found
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.561 seconds
+Domain Reload Profiling:
+	ReloadAssembly (562ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (422ms)
+			LoadAssemblies (31ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (144ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (182ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (29ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (92.5 KB). Loaded Objects now: 3030.
+Memory consumption went from 178.9 MB to 178.8 MB.
+Total: 2.944709 ms (FindLiveObjects: 0.119250 ms CreateObjectMapping: 0.053250 ms MarkObjects: 2.741291 ms  DeleteObjects: 0.029834 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
