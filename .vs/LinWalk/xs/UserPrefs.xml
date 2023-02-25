@@ -1,24 +1,30 @@
 ﻿<Properties StartupConfiguration="{22C0F9D2-910C-0E5A-841E-74B0C3E08FEE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Woman.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Title.cs">
     <Files>
-      <File FileName="Assets/Scripts/Woman.cs" Line="6" Column="3" />
+      <File FileName="Assets/Scripts/Woman.cs" Line="18" Column="27" />
       <File FileName="Assets/Scripts/People.cs" />
       <File FileName="Assets/Scripts/GameManager.cs" />
       <File FileName="Assets/Scripts/PlayerMove.cs" />
+      <File FileName="Assets/Scripts/Teddy.cs" Line="18" Column="28" />
+      <File FileName="Assets/Scripts/Title.cs" Line="18" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="LinWalk" expanded="True" />
+          <Node name="LinWalk" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="14978ed0-7fb0-43e1-9198-5aac795a6dab" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0eb03132-8698-46ce-baea-e5f797e1293d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

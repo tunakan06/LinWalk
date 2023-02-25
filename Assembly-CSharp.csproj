@@ -652,6 +652,7 @@
     <Compile Include="Assets/Utage/Scripts/ADV/Scenario/AdvMacroData.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Effect/AdvEffectManager.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/Effect/AdvCommandPlayAnimation.cs" />
+    <Compile Include="Assets/Scripts/Title.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Utage/Sample/UnityChan/SD_unitychan/UnityChanShader/Shader/Unitychan_chara_fuku.shader" />

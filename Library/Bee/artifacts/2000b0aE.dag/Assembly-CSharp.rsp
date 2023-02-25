@@ -350,6 +350,7 @@
 "Assets/Scripts/People.cs"
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Teddy.cs"
+"Assets/Scripts/Title.cs"
 "Assets/Scripts/Woman.cs"
 "Assets/Spawner.cs"
 "Assets/TargetMatching.cs"
