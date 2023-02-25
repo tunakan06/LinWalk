@@ -98,8 +98,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -141,6 +139,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5358}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -186,8 +186,6 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -1078,7 +1076,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 6a443a508d5bdff6709070f04d708033
+      Hash: b57ffb626550f7bedc7f4a7e9c77e870
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -2658,4 +2656,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Title.unity
   - Assets/Scenes/MainGame.unity
-  playerPath: /Users/koubekisei/LinWalk2023022503
+  playerPath: /Users/koubekisei/LinWalk2023022504

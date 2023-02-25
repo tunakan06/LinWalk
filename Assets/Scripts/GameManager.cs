@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
@@ -14,13 +15,15 @@ public class GameManager : MonoBehaviour
     public List<string> charaTalkingWords = new List<string>();
     public TextMeshProUGUI talkingText, nameText;
     public AudioClip proceedingTalkSE;
-
+    public GameObject endText;
+    private bool clearFlag;
 
     void Start()
     {
         messageWindowI = messageWindow.GetComponent<Image>();
         nameText.text = "";
         talkingText.text = "";
+        clearFlag = false;
     }
 
     /// <summary>
@@ -53,11 +56,14 @@ public class GameManager : MonoBehaviour
             }
             // talkingText.text = charaTalkingWords[0];
             StartCoroutine(TalkText(charaAS, pitch));
-
             //audioSourceSE.PlayOneShot(proceedingTalkSE);
         }
         else
         {
+            if (clearFlag)
+            {
+                Clear();
+            }
             messageWindow.SetActive(false);
             //audioSourceSE.PlayOneShot(proceedingTalkSE);
         }
@@ -84,6 +90,7 @@ public class GameManager : MonoBehaviour
         talkingText.text = ""; //テキストのリセット
         float minPitch = pitch - 0.5f;
         float maxPitch = pitch + 0.5f;
+        string endTalk = "ボクがベアーだよ！";
         while (charaTalkingWords[0].Length > messageCount)//文字をすべて表示していない場合ループ
         {
             if (messageCount % 2 == 0)
@@ -92,10 +99,26 @@ public class GameManager : MonoBehaviour
                 charaAS.PlayOneShot(proceedingTalkSE);
             }
             talkingText.text += charaTalkingWords[0][messageCount];//一文字追加
+            if (talkingText.text == endTalk)
+            {
+                // クリアテキスト出力
+                endText.SetActive(true);
+                clearFlag = true;
+                yield return new WaitForSeconds(3.00f);
+
+            }
             messageCount++;//現在の文字数
             yield return new WaitForSeconds(0.04f);
         }
         charaTalkingWords.RemoveAt(0);
         talkingNow = false;
+    }
+
+    /// <summary>
+    /// クリア処理
+    /// </summary>
+    private void Clear()
+    {
+        SceneManager.LoadScene("Title");
     }
 }
