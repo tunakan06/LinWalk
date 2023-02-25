@@ -15,6 +15,7 @@ public class Teddy : People
 
     public override void Gender()
     {
+        this.name = "Bear";
         man = false;
         audioPitch = 2.5f;
     }

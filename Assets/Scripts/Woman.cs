@@ -15,6 +15,7 @@ public class Woman : People
 
     public override void Gender()
     {
+        this.name = "Joddy";
         man = false;
         audioPitch = 2.5f;
     }
