@@ -514,6 +514,7 @@
     <Compile Include="Assets/Utage/Scripts/Version.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Util/UtageToolKit.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/Object/Prefab/AdvGraphicObjectParticle.cs" />
+    <Compile Include="Assets/Scripts/Title.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Extra/AdvSelectionTimeLimitText.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/File/LoadErrorChecker/AssetFileCheckerInEditor.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/Effect/AdvCommandEffectBase.cs" />
@@ -652,7 +653,6 @@
     <Compile Include="Assets/Utage/Scripts/ADV/Scenario/AdvMacroData.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Effect/AdvEffectManager.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/Effect/AdvCommandPlayAnimation.cs" />
-    <Compile Include="Assets/Scripts/Title.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Utage/Sample/UnityChan/SD_unitychan/UnityChanShader/Shader/Unitychan_chara_fuku.shader" />
