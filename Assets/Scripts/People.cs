@@ -34,6 +34,11 @@ public class People : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (gameManager.score >= 3000)
+        {
+            AddWordsClear();
+        }
+
         if (speechBubbleOb == null) return;
         float disToPlayer = Vector3.Distance(transform.position, player.transform.position);
         if (disToPlayer < 2.5f && speechBubbleOb.activeSelf == false)
@@ -100,6 +105,11 @@ public class People : MonoBehaviour
     }
 
     public virtual void AddWords()
+    {
+
+    }
+
+    public virtual void AddWordsClear()
     {
 
     }

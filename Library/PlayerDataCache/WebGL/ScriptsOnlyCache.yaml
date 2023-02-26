@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - CameraManager
     - CreateRandomPosition
     - GameManager
+    - Item
     - PlayerMove
     - SampleBroadcastMessageByName
     - Teddy
@@ -88,6 +89,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 74
@@ -97,6 +100,8 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
       Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
@@ -137,7 +142,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4396}
     - Class: 114
-      Script: {instanceID: 5358}
+      Script: {instanceID: 5278}
+    - Class: 114
+      Script: {instanceID: 5362}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -187,6 +194,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -222,13 +231,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4736}
     - Class: 114
-      Script: {instanceID: 5284}
+      Script: {instanceID: 5288}
     - Class: 114
-      Script: {instanceID: 5444}
+      Script: {instanceID: 5448}
     - Class: 114
-      Script: {instanceID: 5472}
+      Script: {instanceID: 5476}
     - Class: 114
-      Script: {instanceID: 5890}
+      Script: {instanceID: 5894}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -848,7 +857,7 @@ ScriptsOnlyBuild:
     className: CinemachineConfiner2D
   - hash:
       serializedVersion: 2
-      Hash: 05610f42a5e6a7e2aac66ee156968741
+      Hash: 728bf3b078c0f0a96c038e14ef3d0c5b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CreateRandomPosition
@@ -1076,7 +1085,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: b57ffb626550f7bedc7f4a7e9c77e870
+      Hash: 3ffb4d00a71c5f3132ea896a9d88aaf3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -2072,6 +2081,12 @@ ScriptsOnlyBuild:
     className: Twirl
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Item
+  - hash:
+      serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -2656,4 +2671,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Title.unity
   - Assets/Scenes/MainGame.unity
-  playerPath: /Users/koubekisei/LinWalk2023022504
+  playerPath: /Users/koubekisei/LinWalk2023022601

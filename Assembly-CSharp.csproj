@@ -497,6 +497,7 @@
     <Compile Include="Assets/Utage/Scripts/GameLib/ImageEffects/Variations/Twirl.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Grahic/AdvCommandSprite.cs" />
     <Compile Include="Assets/Locomotion/Scripts/Locomotion.cs" />
+    <Compile Include="Assets/Scripts/Item.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Shader/ShaderManager.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/Object/Prefab/IAdvGraphicObjectCustomCommand.cs" />
     <Compile Include="Assets/TargetMatching.cs" />

@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public AudioClip proceedingTalkSE;
     public GameObject endText;
     private bool clearFlag;
+    public TextMeshProUGUI scorePanelTxt;
+    public int score = 0;
 
     void Start()
     {
@@ -24,6 +26,14 @@ public class GameManager : MonoBehaviour
         nameText.text = "";
         talkingText.text = "";
         clearFlag = false;
+    }
+
+    /// <summary>
+    /// Update
+    /// </summary>
+    private void Update()
+    {
+        
     }
 
     /// <summary>
@@ -57,15 +67,19 @@ public class GameManager : MonoBehaviour
             // talkingText.text = charaTalkingWords[0];
             StartCoroutine(TalkText(charaAS, pitch));
             //audioSourceSE.PlayOneShot(proceedingTalkSE);
-        }
-        else
-        {
             if (clearFlag)
             {
                 Clear();
             }
+        }
+        else
+        {
             messageWindow.SetActive(false);
             //audioSourceSE.PlayOneShot(proceedingTalkSE);
+            if (clearFlag)
+            {
+                Clear();
+            }
         }
     }
 
@@ -90,7 +104,7 @@ public class GameManager : MonoBehaviour
         talkingText.text = ""; //テキストのリセット
         float minPitch = pitch - 0.5f;
         float maxPitch = pitch + 0.5f;
-        string endTalk = "ボクがベアーだよ！";
+        string endTalk = "ムフフーー";
         while (charaTalkingWords[0].Length > messageCount)//文字をすべて表示していない場合ループ
         {
             if (messageCount % 2 == 0)
@@ -120,5 +134,14 @@ public class GameManager : MonoBehaviour
     private void Clear()
     {
         SceneManager.LoadScene("Title");
+    }
+
+    /// <summary>
+    /// スコア加点
+    /// </summary>
+    public void ScoreAdd()
+    {
+        score += 500;
+        scorePanelTxt.text = "SCORE: " + score.ToString();
     }
 }

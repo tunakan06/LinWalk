@@ -307,6 +307,7 @@
 "Assets/ScaleCapsule.cs"
 "Assets/Scripts/CreateRandomPosition.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/Item.cs"
 "Assets/Scripts/People.cs"
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Teddy.cs"

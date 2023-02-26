@@ -13,6 +13,17 @@ public class Teddy : People
         talkingWords.Add("ボクがベアーだよ！");
     }
 
+    public override void AddWordsClear()
+    {
+        talkingWords.Remove("やあ");
+        talkingWords.Remove("見つかっちゃったね");
+        talkingWords.Remove("ボクがベアーだよ！");
+
+        talkingWords.Add("お菓子ありがとう！");
+        talkingWords.Add("うれしいな！");
+        talkingWords.Add("ムフフーー");
+    }
+
     public override void Gender()
     {
         this.name = "Bear";
