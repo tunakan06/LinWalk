@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 060c2516a9e09496da6e7084915fbb82
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - messageWindow: {instanceID: 0}
+  - talkingText: {instanceID: 0}
+  - nameText: {instanceID: 0}
+  - proceedingTalkSE: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
