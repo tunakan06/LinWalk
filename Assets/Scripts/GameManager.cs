@@ -20,6 +20,11 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scorePanelTxt;
     public int score = 0;
 
+    // ピッチ幅
+    private float pitchBreadth = 0.5f;
+
+    // 
+
     void Start()
     {
         messageWindowI = messageWindow.GetComponent<Image>();
@@ -102,8 +107,8 @@ public class GameManager : MonoBehaviour
         talkingNow = true;
         int messageCount = 0; //現在表示中の文字数
         talkingText.text = ""; //テキストのリセット
-        float minPitch = pitch - 0.5f;
-        float maxPitch = pitch + 0.5f;
+        float minPitch = pitch - pitchBreadth;
+        float maxPitch = pitch + pitchBreadth;
         string endTalk = "ムフフーー";
         while (charaTalkingWords[0].Length > messageCount)//文字をすべて表示していない場合ループ
         {

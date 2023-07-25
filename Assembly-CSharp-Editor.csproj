@@ -826,37 +826,25 @@
       <Project>{F178C33A-7EC6-EC61-0C26-456E139AACBE}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{182071A1-9F32-2B7F-E13C-74FD9ABBAC4D}</Project>
-      <Name>Cinemachine</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{3FCC7F83-3F46-52FD-1DEA-2E133F98704D}</Project>
       <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
-      <Project>{27E822FA-D17E-365F-21BB-05491F1A0272}</Project>
-      <Name>Unity.Services.Core.Analytics</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{B8A85D65-FEAB-D085-AFD9-7BCBDB816ED3}</Project>
-      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{099D0DE7-7113-291E-4825-192FD2ACEBCA}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Environments.csproj">
-      <Project>{8892C17C-4765-72E0-0BD7-AF6203C2F437}</Project>
-      <Name>Unity.Services.Core.Environments</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
       <Project>{B35FFF4F-9031-B846-0F5D-F72A44EDF994}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{281D57D6-70D4-ECA3-F3AD-DED6185FC46B}</Project>
-      <Name>Unity.Timeline.Editor</Name>
+    <ProjectReference Include="Autodesk.Fbx.Editor.csproj">
+      <Project>{406D42A5-903F-EDC4-25A4-C4DF00F545AC}</Project>
+      <Name>Autodesk.Fbx.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Formats.Fbx.Editor.csproj">
+      <Project>{08B825F3-0AF9-6AB8-D338-C6115970EFF2}</Project>
+      <Name>Unity.Formats.Fbx.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{3206FFE4-DC0A-FF4D-A496-593D3FAD8FB4}</Project>
@@ -882,6 +870,10 @@
       <Project>{FE209B58-A915-D37E-C4BE-2C66A7EE5B54}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Autodesk.Fbx.csproj">
+      <Project>{8429980A-C384-9AE0-DDE6-59F0A72BD69A}</Project>
+      <Name>Autodesk.Fbx</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{B1D3C5C9-5FB6-0AF3-0D81-48251BF61421}</Project>
       <Name>UnityEngine.UI</Name>
@@ -889,6 +881,30 @@
     <ProjectReference Include="Unity.Services.Core.csproj">
       <Project>{47B241AC-97BF-1BF6-23FE-9B5FB09103BC}</Project>
       <Name>Unity.Services.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{182071A1-9F32-2B7F-E13C-74FD9ABBAC4D}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
+      <Project>{27E822FA-D17E-365F-21BB-05491F1A0272}</Project>
+      <Name>Unity.Services.Core.Analytics</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{B8A85D65-FEAB-D085-AFD9-7BCBDB816ED3}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Environments.csproj">
+      <Project>{8892C17C-4765-72E0-0BD7-AF6203C2F437}</Project>
+      <Name>Unity.Services.Core.Environments</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Formats.Fbx.Runtime.csproj">
+      <Project>{5AF97AD9-B61D-051A-35A5-A0BCA46E7ABD}</Project>
+      <Name>Unity.Formats.Fbx.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{281D57D6-70D4-ECA3-F3AD-DED6185FC46B}</Project>
+      <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

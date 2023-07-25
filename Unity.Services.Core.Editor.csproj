@@ -87,8 +87,8 @@
     <Compile Include="Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/UserRoleManagement/UserRole.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/UiHelpers/SettingsCommonHeaderUiHelper.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/UiHelpers/SliderToggleUiHelper.cs" />
-    <Compile Include="Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/EditorGameService/DefaultCdnConfiguredEndpoint.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/EditorGameService/EditorGameServiceSettingsProvider.cs" />
+    <Compile Include="Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/EditorGameService/DefaultCdnConfiguredEndpoint.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/UiHelpers/AccessTokenErrorUiHelper.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/EditorGameService/EditorGameServiceDashboardHelper.cs" />
     <Compile Include="Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/EditorGameService/IEditorGameServiceIdentifier.cs" />

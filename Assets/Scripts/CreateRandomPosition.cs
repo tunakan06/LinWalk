@@ -38,10 +38,29 @@ public class CreateRandomPosition : MonoBehaviour
     //　人数
     private int number1;
     private int number2;
+    private int allHumans = 16;
+
+    // 範囲
+    private float xRange = 30f;
+    private float zRange = 18f;
+    private float xMinTeddyRange = 28f;
+    private float zMinTeddyRange = 17f;
+    private float xMaxTeddyRange = 27f;
+    private float zMaxTeddyRange = 16f;
+
+    // スイーツ
+    private const string cake = "Cake";
+    private const string donuts = "Donuts";
+    private const string hambuger = "Hambuger";
+    private const string hamEgg = "HamEgg";
+    private const string iceCream = "IceCream";
+    private const string milk = "Milk";
+    private const string waffle = "Waffle";
 
     void Start(){
         number1 = 1;
         number2 = 1;
+
     }
 
     // Update is called once per frame
@@ -52,19 +71,20 @@ public class CreateRandomPosition : MonoBehaviour
 
         // 約1秒置きにランダムに生成されるようにする。
         //if(time > 1.0f)
-        if(number1 <= 16)
+        if(number1 <= allHumans)
 		{
-            float x = Random.Range(-30f, 30f);
-            float z = Random.Range(-18f, 18f);
+            float x = Random.Range(-xRange, xRange);
+            float z = Random.Range(-zRange, zRange);
 
             // GameObjectを上記で決まったランダムな場所に生成
-            if(number1 < 16){
+            if(number1 < allHumans)
+            {
                 Instantiate(createPrefab, new Vector3(x,0,z), createPrefab.transform.rotation);
             }
-            else if(number1 == 16){
-
-                x = Random.Range(-28f, -27f);
-                z = Random.Range(-17f, -16f);
+            else if(number1 == allHumans)
+            {
+                x = Random.Range(-xMinTeddyRange, -xMaxTeddyRange);
+                z = Random.Range(-zMinTeddyRange, -zMaxTeddyRange);
 
                 Instantiate(createPrefabBear, new Vector3(x,0,z), createPrefabBear.transform.rotation);
             }
@@ -78,47 +98,47 @@ public class CreateRandomPosition : MonoBehaviour
 
         if (number2 <= 2)
         {
-            float x = Random.Range(-30f, 30f);
+            float x = Random.Range(-xRange, xRange);
             float z = Random.Range(-18f, 18f);
 
             Instantiate(createPrefabCake, new Vector3(x, 0, z), createPrefabCake.transform.rotation);
-            createPrefabCake.name = "Cake";
+            createPrefabCake.name = cake;
 
-            x = Random.Range(-30f, 30f);
-            z = Random.Range(-18f, 18f);
+            x = Random.Range(-xRange, xRange);
+            z = Random.Range(-zRange, zRange);
 
             Instantiate(createPrefabDonuts, new Vector3(x, 0, z), createPrefabDonuts.transform.rotation);
-            createPrefabDonuts.name = "Donuts";
+            createPrefabDonuts.name = donuts;
 
-            x = Random.Range(-30f, 30f);
-            z = Random.Range(-18f, 18f);
+            x = Random.Range(-xRange, xRange);
+            z = Random.Range(-zRange, zRange);
 
             Instantiate(createPrefabHambuger, new Vector3(x, 0, z), createPrefabHambuger.transform.rotation);
-            createPrefabHambuger.name = "Hambuger";
+            createPrefabHambuger.name = hambuger;
 
-            x = Random.Range(-30f, 30f);
-            z = Random.Range(-18f, 18f);
+            x = Random.Range(-xRange, xRange);
+            z = Random.Range(-zRange, zRange);
 
             Instantiate(createPrefabHamEgg, new Vector3(x, 0, z), createPrefabHamEgg.transform.rotation);
-            createPrefabHamEgg.name = "HamEgg";
+            createPrefabHamEgg.name = hamEgg;
 
-            x = Random.Range(-30f, 30f);
-            z = Random.Range(-18f, 18f);
+            x = Random.Range(-xRange, xRange);
+            z = Random.Range(-zRange, zRange);
 
             Instantiate(createPrefabIceCream, new Vector3(x, 0, z), createPrefabIceCream.transform.rotation);
-            createPrefabIceCream.name = "IceCream";
+            createPrefabIceCream.name = iceCream;
 
-            x = Random.Range(-30f, 30f);
-            z = Random.Range(-18f, 18f);
+            x = Random.Range(-xRange, xRange);
+            z = Random.Range(-zRange, zRange);
 
             Instantiate(createPrefabCMilk, new Vector3(x, 0, z), createPrefabCMilk.transform.rotation);
-            createPrefabCMilk.name = "Milk";
+            createPrefabCMilk.name = milk;
 
-            x = Random.Range(-30f, 30f);
-            z = Random.Range(-18f, 18f);
+            x = Random.Range(-xRange, xRange);
+            z = Random.Range(-zRange, zRange);
 
             Instantiate(createPrefabWaffle, new Vector3(x, 0, z), createPrefabWaffle.transform.rotation);
-            createPrefabWaffle.name = "Waffle";
+            createPrefabWaffle.name = waffle;
 
             // 経過時間リセット
             //time = 0f;

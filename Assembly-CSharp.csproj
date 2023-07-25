@@ -58,12 +58,12 @@
   <ItemGroup>
     <Compile Include="Assets/Utage/Scripts/GameLib/EditorDrawer/Propety/ButtonAttribute.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Sound/AdvCommandStopSe.cs" />
-    <Compile Include="Assets/Utage/Scripts/GameLib/Dictionary/SerializableDictionaryFileRead.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/Effect/AdvCommandImageEffectBase.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/UI/AdvUiManager.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/Image/Avatar/AvatarFolderData.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Sound/SoundManagerSystem.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/DataManager/SettingData/AdvEyeBlinkSetting.cs" />
+    <Compile Include="Assets/Utage/Scripts/GameLib/Dictionary/SerializableDictionaryFileRead.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/Object/Prefab/AdvParticleStopType.cs" />
     <Compile Include="Assets/Utage/Scripts/TemplateUI/Gallery/UtageUguiCgGallery.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/Image/Dicing/LipSynchDicing.cs" />
@@ -74,22 +74,22 @@
     <Compile Include="Assets/Utage/Scripts/ADV/Save/AdvGallerySaveData.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Grahic/AdvCommandBgEvent.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Timer/WaitTimer.cs" />
-    <Compile Include="Assets/Utage/Scripts/GameLib/File/AssetBundleInfo.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Grahic/AdvCommandResetPivot.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
+    <Compile Include="Assets/Utage/Scripts/GameLib/File/AssetBundleInfo.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/CustomProjectSetting/Language/ErrorMsg.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/Effect/AdvCommandTween.cs" />
-    <Compile Include="Assets/Utage/Scripts/ADV/Command/UI/AdvCommandHideMenuButton.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Logic/MessageWindow/AdvMessageWindow.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Save/AdvReadHistorySaveData.cs" />
+    <Compile Include="Assets/Utage/Scripts/ADV/Command/UI/AdvCommandHideMenuButton.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Scenario/IAdvEntityCommand.cs" />
     <Compile Include="Assets/Utage/Sample/UnityChan/SD_unitychan/Scripts/CameraController.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/AdvCommandKeyword.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Logic/AdvCommandJumpRandomEnd.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Grahic/AdvCommandBgEventOff.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/File/UtageFile/AssetFileUtageInfo.cs" />
-    <Compile Include="Assets/Utage/Sample/Scripts/UtageRecieveMessageSample.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Grahic/AdvCommandVideo.cs" />
+    <Compile Include="Assets/Utage/Sample/Scripts/UtageRecieveMessageSample.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/DataManager/SettingData/AdvLipSynchSetting.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/AdvCustomCommandManager.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Logic/AdvCommandEndScenario.cs" />
@@ -128,8 +128,8 @@
     <Compile Include="Assets/Utage/Scripts/GameLib/Util/Alignment.cs" />
     <Compile Include="Assets/MineBot.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/LayoutController/UguiSizeFitter.cs" />
-    <Compile Include="Assets/Utage/Scripts/TemplateUI/UtageUguiSaveLoad.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/Object/UIGraphic/AdvGraphicObjectUguiBase.cs" />
+    <Compile Include="Assets/Utage/Scripts/TemplateUI/UtageUguiSaveLoad.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/Layer/AdvGraphicLayerDefault.cs" />
     <Compile Include="Assets/Utage/Sample/Scripts/SampleLanguage.cs" />
     <Compile Include="Assets/Utage/Scripts/TemplateUI/Gallery/UtageUguiGallery.cs" />
@@ -270,8 +270,8 @@
     <Compile Include="Assets/Utage/Scripts/ADV/UI/GUI/AdvGuiManager.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/File/WWWEx.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/ImageEffects/Base/ImageEffectUtil.cs" />
-    <Compile Include="Assets/NoNeed/RandomCharacters.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/DataManager/SettingData/AdvLocalizeSetting.cs" />
+    <Compile Include="Assets/NoNeed/RandomCharacters.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Sound/SoundManager.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/NovelText/UguiNovelTextCharacter.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Logic/MessageWindow/IAdvMessageWindow.cs" />
@@ -319,11 +319,11 @@
     <Compile Include="Assets/Utage/Scripts/ADV/DataManager/SettingData/AdvVideoCommandSetting.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/UI/GUI/AdvCommandGuiSize.cs" />
     <Compile Include="Assets/Utage/Sample/UnityChan/SD_unitychan/Scripts/ThirdPersonCamera.cs" />
-    <Compile Include="Assets/Utage/Scripts/TemplateUI/Gallery/UtageUguiSceneGallery.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/ImageEffects/Variations/SepiaTone.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/File/UtageFile/StaticAssetManager.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/EditorDrawer/DecoratorDrawerEx.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/SystemUI/SystemUiDebugMenu.cs" />
+    <Compile Include="Assets/Utage/Scripts/TemplateUI/Gallery/UtageUguiSceneGallery.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/Image/Avatar/AvatarData.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/Effect/AdvCommandImageEffectOff.cs" />
     <Compile Include="Assets/Utage/Sample/UnityChan/SD_unitychan/Scripts/AutoBlink.cs" />
@@ -386,22 +386,22 @@
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Grahic/AdvCommandSetPivot.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/Custom/AdvLipSyncCustom.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/Localize/UguiLocalizeBase.cs" />
-    <Compile Include="Assets/Utage/Scripts/GameLib/File/Compression.cs" />
     <Compile Include="Assets/Utage/Scripts/TemplateUI/Gallery/UtageUguiCgGalleryItem.cs" />
-    <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/AdvCommandWaitCustom.cs" />
+    <Compile Include="Assets/Utage/Scripts/GameLib/File/Compression.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/UguiToggleGroupIndexed.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/Object/AdvEffectColor.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Grahic/AdvCommandCharacter.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
-    <Compile Include="Assets/Utage/Scripts/GameLib/EditorDrawer/Propety/MinAttribute.cs" />
+    <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/AdvCommandWaitCustom.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Sound/AdvCommandStopVoice.cs" />
-    <Compile Include="Assets/Utage/Scripts/TemplateUI/UtageUguiStartChapter.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/LayoutController/AlignGroup/UguiHorizontalAlignGroup.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/ImageEffects/Variations/Grayscale.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/File/AssetBundleHelper.cs" />
+    <Compile Include="Assets/Utage/Scripts/GameLib/EditorDrawer/Propety/MinAttribute.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/Object/Prefab/AdvGraphicObjectParticleController.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Sound/SoundAudioPlayer.cs" />
+    <Compile Include="Assets/Utage/Scripts/TemplateUI/UtageUguiStartChapter.cs" />
     <Compile Include="Assets/Utage/Sample/Scripts/SampleMessageSpeedDemo.cs" />
     <Compile Include="Assets/Utage/Sample/Scripts/SampleChatLog.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Logic/AdvCommandElse.cs" />
@@ -522,8 +522,8 @@
     <Compile Include="Assets/Utage/Sample/Scripts/SampleChatLogItem.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Math/EaseValue.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Grahic/AdvCommandLayerReset.cs" />
-    <Compile Include="Assets/Utage/Sample/UnityChan/SD_unitychan/Scripts/FaceUpdate.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/Localize/UguiLocalizeTextSetting.cs" />
+    <Compile Include="Assets/Utage/Sample/UnityChan/SD_unitychan/Scripts/FaceUpdate.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/AdvCommandWaitConditional.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Effect/IAdvSkipSpeed.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
@@ -534,14 +534,14 @@
     <Compile Include="Assets/NoNeed/Responsive.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/Object/AdvGraphicLoader.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/ClickEvent/AdvClickEvent.cs" />
-    <Compile Include="Assets/Utage/Scripts/GameLib/Effect/MotionPlayType.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/DataManager/AdvColumnName.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/File/ConvertFileList.cs" />
     <Compile Include="Assets/Utage/Scripts/TemplateUI/UtageUguiConfig.cs" />
-    <Compile Include="Assets/Utage/Scripts/TemplateUI/UtageUguiConfigTaggedMasterVolume.cs" />
+    <Compile Include="Assets/Utage/Scripts/GameLib/Effect/MotionPlayType.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Scenario/AdvScenarioPageData.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/DataManager/AdvImportBook.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/NovelText/UguiNovelTextFontInfoBuilder.cs" />
+    <Compile Include="Assets/Utage/Scripts/TemplateUI/UtageUguiConfigTaggedMasterVolume.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/UI/AdvMessageWindowEvent.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/DataManager/AdvDataManager.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/Effect/AdvCommandZoomCamera.cs" />
@@ -558,11 +558,11 @@
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/IAdvGraphicLayer.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Logic/MessageWindow/IAdvMessageWindowCaracterCountChecker.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Logic/AdvCommandPageControler.cs" />
-    <Compile Include="Assets/Utage/Scripts/GameLib/UI/View/UguiView.cs" />
-    <Compile Include="Assets/Utage/Scripts/GameLib/UI/LayoutController/UguiLetterBoxCanvasScaler.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/AdvEngine.cs" />
     <Compile Include="Assets/NavMesh_UI.cs" />
+    <Compile Include="Assets/Utage/Scripts/GameLib/UI/LayoutController/UguiLetterBoxCanvasScaler.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
+    <Compile Include="Assets/Utage/Scripts/GameLib/UI/View/UguiView.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/Image/LipSynch2d.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/AdvEngineStarter.cs" />
@@ -575,8 +575,8 @@
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/Effect/IAnimationTransition.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/Image/Avatar/LipSynchAvatar.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/ClickEvent/IAdvClickEvent.cs" />
-    <Compile Include="Assets/Utage/Scripts/ADV/Command/Grahic/AdvCommandCharacterOff.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Util/ObjectPool.cs" />
+    <Compile Include="Assets/Utage/Scripts/ADV/Command/Grahic/AdvCommandCharacterOff.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/File/UtageFile/AssetFileUtage.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
@@ -584,11 +584,11 @@
     <Compile Include="Assets/Utage/Scripts/GameLib/File/UtageFile/AssetFileDummyOnLoadError.cs" />
     <Compile Include="Assets/Utage/Sample/Scripts/AutoStartGame.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/AdvCommandWaitInput.cs" />
-    <Compile Include="Assets/IK.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Math/EaseType.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/SystemUI/CloudBuildManifest.cs" />
+    <Compile Include="Assets/IK.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Logic/BackLog/AdvBacklog.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Scenario/AdvMacroManager.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/Object/Prefab/AdvGraphicObjectCustom2D.cs" />
@@ -634,13 +634,13 @@
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Wait/Effect/AdvCommandShake.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Util/PivotUtil.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/UI/AdvUguiSelection.cs" />
-    <Compile Include="Assets/Utage/Scripts/GameLib/Expression/ExpressionCast.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
+    <Compile Include="Assets/Utage/Scripts/GameLib/Expression/ExpressionCast.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Wrapper/WrapperUnityVersion.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/CustomProjectSetting/CustomProjectSetting.cs" />
-    <Compile Include="Assets/Utage/Scripts/GameLib/Util/FlagsUtil.cs" />
     <Compile Include="Assets/NoNeed/Bear.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Graphic/Object/RenderTexture/AdvRenderTextureMode.cs" />
+    <Compile Include="Assets/Utage/Scripts/GameLib/Util/FlagsUtil.cs" />
     <Compile Include="Assets/Utage/Scripts/ADV/Command/Logic/AdvCommandJump.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/UI/Image/Avatar/AvatarImage.cs" />
     <Compile Include="Assets/Utage/Scripts/GameLib/Camera/CameraManager.cs" />
@@ -1351,37 +1351,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{182071A1-9F32-2B7F-E13C-74FD9ABBAC4D}</Project>
-      <Name>Cinemachine</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{3FCC7F83-3F46-52FD-1DEA-2E133F98704D}</Project>
       <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
-      <Project>{27E822FA-D17E-365F-21BB-05491F1A0272}</Project>
-      <Name>Unity.Services.Core.Analytics</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{B8A85D65-FEAB-D085-AFD9-7BCBDB816ED3}</Project>
-      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{099D0DE7-7113-291E-4825-192FD2ACEBCA}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Environments.csproj">
-      <Project>{8892C17C-4765-72E0-0BD7-AF6203C2F437}</Project>
-      <Name>Unity.Services.Core.Environments</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
       <Project>{B35FFF4F-9031-B846-0F5D-F72A44EDF994}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{281D57D6-70D4-ECA3-F3AD-DED6185FC46B}</Project>
-      <Name>Unity.Timeline.Editor</Name>
+    <ProjectReference Include="Autodesk.Fbx.Editor.csproj">
+      <Project>{406D42A5-903F-EDC4-25A4-C4DF00F545AC}</Project>
+      <Name>Autodesk.Fbx.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Formats.Fbx.Editor.csproj">
+      <Project>{08B825F3-0AF9-6AB8-D338-C6115970EFF2}</Project>
+      <Name>Unity.Formats.Fbx.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{3206FFE4-DC0A-FF4D-A496-593D3FAD8FB4}</Project>
@@ -1407,6 +1395,10 @@
       <Project>{FE209B58-A915-D37E-C4BE-2C66A7EE5B54}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Autodesk.Fbx.csproj">
+      <Project>{8429980A-C384-9AE0-DDE6-59F0A72BD69A}</Project>
+      <Name>Autodesk.Fbx</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{B1D3C5C9-5FB6-0AF3-0D81-48251BF61421}</Project>
       <Name>UnityEngine.UI</Name>
@@ -1414,6 +1406,30 @@
     <ProjectReference Include="Unity.Services.Core.csproj">
       <Project>{47B241AC-97BF-1BF6-23FE-9B5FB09103BC}</Project>
       <Name>Unity.Services.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{182071A1-9F32-2B7F-E13C-74FD9ABBAC4D}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
+      <Project>{27E822FA-D17E-365F-21BB-05491F1A0272}</Project>
+      <Name>Unity.Services.Core.Analytics</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{B8A85D65-FEAB-D085-AFD9-7BCBDB816ED3}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Environments.csproj">
+      <Project>{8892C17C-4765-72E0-0BD7-AF6203C2F437}</Project>
+      <Name>Unity.Services.Core.Environments</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Formats.Fbx.Runtime.csproj">
+      <Project>{5AF97AD9-B61D-051A-35A5-A0BCA46E7ABD}</Project>
+      <Name>Unity.Formats.Fbx.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{281D57D6-70D4-ECA3-F3AD-DED6185FC46B}</Project>
+      <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

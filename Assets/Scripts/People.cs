@@ -19,6 +19,12 @@ public class People : MonoBehaviour
     public float audioPitch;
     private CapsuleCollider capsuleCollider;
 
+    // クリアスコア
+    private int clearScore = 3000;
+
+    // プレイヤーとの距離の閾値
+    private float distanceThresholdFromPlayer = 2.5f;
+
     // Start is called before the first frame update
     public virtual void Start()
     {
@@ -34,18 +40,18 @@ public class People : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameManager.score >= 3000)
+        if (gameManager.score >= clearScore)
         {
             AddWordsClear();
         }
 
         if (speechBubbleOb == null) return;
         float disToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        if (disToPlayer < 2.5f && speechBubbleOb.activeSelf == false)
+        if (disToPlayer < distanceThresholdFromPlayer && speechBubbleOb.activeSelf == false)
         {
             StartCoroutine("DisplaySB");
         }
-        if (disToPlayer >= 2.5f && speechBubbleOb.activeSelf == true)
+        if (disToPlayer >= distanceThresholdFromPlayer && speechBubbleOb.activeSelf == true)
         {
             StartCoroutine("CloseSB");
             gameManager.CloseMessageWindow();
