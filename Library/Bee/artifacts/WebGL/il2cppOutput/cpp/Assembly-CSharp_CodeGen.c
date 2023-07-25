@@ -198,18 +198,18 @@ extern void GameManager_Clear_mF90EFA9CE2DB29DCEAA358510961171AD1F15DEB (void);
 extern void GameManager_ScoreAdd_m41B9C1594E736BD5B01D294D74820C7FABAD0947 (void);
 // 0x0000005D System.Void GameManager::.ctor()
 extern void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (void);
-// 0x0000005E System.Void GameManager/<TalkText>d__17::.ctor(System.Int32)
-extern void U3CTalkTextU3Ed__17__ctor_mF9B05C36DCD4545DBDB8AFD3F81F4A50A34BB0C7 (void);
-// 0x0000005F System.Void GameManager/<TalkText>d__17::System.IDisposable.Dispose()
-extern void U3CTalkTextU3Ed__17_System_IDisposable_Dispose_m65FDC42270C7ED3F43D73530069EE3D86AB08C5D (void);
-// 0x00000060 System.Boolean GameManager/<TalkText>d__17::MoveNext()
-extern void U3CTalkTextU3Ed__17_MoveNext_m5E6E2B7FF43305CAE87CC1EE32DF1FD95754647D (void);
-// 0x00000061 System.Object GameManager/<TalkText>d__17::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CTalkTextU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA3C437654AF65427D665317B50FD778CF2B0B77D (void);
-// 0x00000062 System.Void GameManager/<TalkText>d__17::System.Collections.IEnumerator.Reset()
-extern void U3CTalkTextU3Ed__17_System_Collections_IEnumerator_Reset_m21B8000738A74099107FAAAEC884E645280FC90B (void);
-// 0x00000063 System.Object GameManager/<TalkText>d__17::System.Collections.IEnumerator.get_Current()
-extern void U3CTalkTextU3Ed__17_System_Collections_IEnumerator_get_Current_mDB203C11FD561523DDED2BC36176022A414F666C (void);
+// 0x0000005E System.Void GameManager/<TalkText>d__18::.ctor(System.Int32)
+extern void U3CTalkTextU3Ed__18__ctor_m040FB33D29DF1C304E486878B7C2D5FFC05A397F (void);
+// 0x0000005F System.Void GameManager/<TalkText>d__18::System.IDisposable.Dispose()
+extern void U3CTalkTextU3Ed__18_System_IDisposable_Dispose_mEF84A6DA72D3A903178B368E8CB43B54656DFFB5 (void);
+// 0x00000060 System.Boolean GameManager/<TalkText>d__18::MoveNext()
+extern void U3CTalkTextU3Ed__18_MoveNext_m9EA26AA6E64C972EB4A528F5BC74A546F47C2BF5 (void);
+// 0x00000061 System.Object GameManager/<TalkText>d__18::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CTalkTextU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mAAF4409D951AA311DB6E2EF681A22DA32C3E59F0 (void);
+// 0x00000062 System.Void GameManager/<TalkText>d__18::System.Collections.IEnumerator.Reset()
+extern void U3CTalkTextU3Ed__18_System_Collections_IEnumerator_Reset_m87A5E47137F1B1358EFDED4D3AC50B5D0C034CDD (void);
+// 0x00000063 System.Object GameManager/<TalkText>d__18::System.Collections.IEnumerator.get_Current()
+extern void U3CTalkTextU3Ed__18_System_Collections_IEnumerator_get_Current_m2990C5038913FCB4749B518A35A01FA67DC9B19C (void);
 // 0x00000064 System.Void Item::Start()
 extern void Item_Start_mAF304BC26FB5ED4C69F6534266EE4F082967E4D8 (void);
 // 0x00000065 System.Void Item::Update()
@@ -234,30 +234,30 @@ extern void People_AddWordsClear_m599FE8A076B8B30D6FB3ED8F8524038CD1F758CA (void
 extern void People_Gender_mC37B042336F9CF000AAFA6061621E5847D8C1342 (void);
 // 0x0000006F System.Void People::.ctor()
 extern void People__ctor_mDC854A2933F72C954B5DF9C26452AB1462986C14 (void);
-// 0x00000070 System.Void People/<DisplaySB>d__10::.ctor(System.Int32)
-extern void U3CDisplaySBU3Ed__10__ctor_m07E0F4B54D2A8F656ACA9B00151353E299955F9E (void);
-// 0x00000071 System.Void People/<DisplaySB>d__10::System.IDisposable.Dispose()
-extern void U3CDisplaySBU3Ed__10_System_IDisposable_Dispose_mFFCDF06A5E33A119FFB935478FDED466258281F2 (void);
-// 0x00000072 System.Boolean People/<DisplaySB>d__10::MoveNext()
-extern void U3CDisplaySBU3Ed__10_MoveNext_m03C8B84B4E16D6333897C11E7259C3E5A6D05714 (void);
-// 0x00000073 System.Object People/<DisplaySB>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CDisplaySBU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE4ECB9BBF8036384506D27703C770287DCDC0691 (void);
-// 0x00000074 System.Void People/<DisplaySB>d__10::System.Collections.IEnumerator.Reset()
-extern void U3CDisplaySBU3Ed__10_System_Collections_IEnumerator_Reset_mBC6C270E6063D4E72F7C31AAD331071DC8F1D767 (void);
-// 0x00000075 System.Object People/<DisplaySB>d__10::System.Collections.IEnumerator.get_Current()
-extern void U3CDisplaySBU3Ed__10_System_Collections_IEnumerator_get_Current_m05BD9DAF3021D39B67E5622A8F7685AFB1D0AC1D (void);
-// 0x00000076 System.Void People/<CloseSB>d__11::.ctor(System.Int32)
-extern void U3CCloseSBU3Ed__11__ctor_mD94E727E2F29A796240B4E6D3A224389423B2072 (void);
-// 0x00000077 System.Void People/<CloseSB>d__11::System.IDisposable.Dispose()
-extern void U3CCloseSBU3Ed__11_System_IDisposable_Dispose_mED43CF8231534D766AB24B155E9CEE496A1B9D3E (void);
-// 0x00000078 System.Boolean People/<CloseSB>d__11::MoveNext()
-extern void U3CCloseSBU3Ed__11_MoveNext_mC3B9B9FDD8CA1AB9C514097641F41CFB5E2083E5 (void);
-// 0x00000079 System.Object People/<CloseSB>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CCloseSBU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m731F0945FB167038794C955A6FC5597A5BFA8294 (void);
-// 0x0000007A System.Void People/<CloseSB>d__11::System.Collections.IEnumerator.Reset()
-extern void U3CCloseSBU3Ed__11_System_Collections_IEnumerator_Reset_m17A03FCC4F48FE7291B9264B85A273CAC05BAFFB (void);
-// 0x0000007B System.Object People/<CloseSB>d__11::System.Collections.IEnumerator.get_Current()
-extern void U3CCloseSBU3Ed__11_System_Collections_IEnumerator_get_Current_mE9322E625202F1B13AB1BCB973B3D759162A83AF (void);
+// 0x00000070 System.Void People/<DisplaySB>d__12::.ctor(System.Int32)
+extern void U3CDisplaySBU3Ed__12__ctor_m9C0A2DED5E18CB5400B525AF4E6842CA49B5021A (void);
+// 0x00000071 System.Void People/<DisplaySB>d__12::System.IDisposable.Dispose()
+extern void U3CDisplaySBU3Ed__12_System_IDisposable_Dispose_mC1B2469A70194E45C23DF63421A2467113E03B35 (void);
+// 0x00000072 System.Boolean People/<DisplaySB>d__12::MoveNext()
+extern void U3CDisplaySBU3Ed__12_MoveNext_m8026E134F558C58262432EC3665EA39A1310D8B4 (void);
+// 0x00000073 System.Object People/<DisplaySB>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CDisplaySBU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m401E32F044E1A7E2A17EAD9F35610CFAB9C7B952 (void);
+// 0x00000074 System.Void People/<DisplaySB>d__12::System.Collections.IEnumerator.Reset()
+extern void U3CDisplaySBU3Ed__12_System_Collections_IEnumerator_Reset_mDED08CD57FABE0D38AFABBBD8269D9216646D56B (void);
+// 0x00000075 System.Object People/<DisplaySB>d__12::System.Collections.IEnumerator.get_Current()
+extern void U3CDisplaySBU3Ed__12_System_Collections_IEnumerator_get_Current_m72574F77D85B62A5186635DEC0C3DA6F6D1E9E8A (void);
+// 0x00000076 System.Void People/<CloseSB>d__13::.ctor(System.Int32)
+extern void U3CCloseSBU3Ed__13__ctor_mE416C8A2D75D6D453D6D040865FA8A6CFC6455CC (void);
+// 0x00000077 System.Void People/<CloseSB>d__13::System.IDisposable.Dispose()
+extern void U3CCloseSBU3Ed__13_System_IDisposable_Dispose_m92F1A48FF22C4694D1D38869FBC4C5A86DE7221E (void);
+// 0x00000078 System.Boolean People/<CloseSB>d__13::MoveNext()
+extern void U3CCloseSBU3Ed__13_MoveNext_mD38771680114E9E931C1476C3179C2132A38F12E (void);
+// 0x00000079 System.Object People/<CloseSB>d__13::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CCloseSBU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m14378E9DEC14584E32D781338FE904172DAD513B (void);
+// 0x0000007A System.Void People/<CloseSB>d__13::System.Collections.IEnumerator.Reset()
+extern void U3CCloseSBU3Ed__13_System_Collections_IEnumerator_Reset_m286047C9CE07B8EB665B474CFB5FA83885776A76 (void);
+// 0x0000007B System.Object People/<CloseSB>d__13::System.Collections.IEnumerator.get_Current()
+extern void U3CCloseSBU3Ed__13_System_Collections_IEnumerator_get_Current_m652DF221CDEFD36B93DA5965F5A23C52E11C6C7F (void);
 // 0x0000007C System.Void PlayerMove::Start()
 extern void PlayerMove_Start_m1ACFD10BF71998671B39878CE4208A1F880BE62E (void);
 // 0x0000007D System.Void PlayerMove::Update()
@@ -14909,12 +14909,12 @@ static Il2CppMethodPointer s_methodPointers[7561] =
 	GameManager_Clear_mF90EFA9CE2DB29DCEAA358510961171AD1F15DEB,
 	GameManager_ScoreAdd_m41B9C1594E736BD5B01D294D74820C7FABAD0947,
 	GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368,
-	U3CTalkTextU3Ed__17__ctor_mF9B05C36DCD4545DBDB8AFD3F81F4A50A34BB0C7,
-	U3CTalkTextU3Ed__17_System_IDisposable_Dispose_m65FDC42270C7ED3F43D73530069EE3D86AB08C5D,
-	U3CTalkTextU3Ed__17_MoveNext_m5E6E2B7FF43305CAE87CC1EE32DF1FD95754647D,
-	U3CTalkTextU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA3C437654AF65427D665317B50FD778CF2B0B77D,
-	U3CTalkTextU3Ed__17_System_Collections_IEnumerator_Reset_m21B8000738A74099107FAAAEC884E645280FC90B,
-	U3CTalkTextU3Ed__17_System_Collections_IEnumerator_get_Current_mDB203C11FD561523DDED2BC36176022A414F666C,
+	U3CTalkTextU3Ed__18__ctor_m040FB33D29DF1C304E486878B7C2D5FFC05A397F,
+	U3CTalkTextU3Ed__18_System_IDisposable_Dispose_mEF84A6DA72D3A903178B368E8CB43B54656DFFB5,
+	U3CTalkTextU3Ed__18_MoveNext_m9EA26AA6E64C972EB4A528F5BC74A546F47C2BF5,
+	U3CTalkTextU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mAAF4409D951AA311DB6E2EF681A22DA32C3E59F0,
+	U3CTalkTextU3Ed__18_System_Collections_IEnumerator_Reset_m87A5E47137F1B1358EFDED4D3AC50B5D0C034CDD,
+	U3CTalkTextU3Ed__18_System_Collections_IEnumerator_get_Current_m2990C5038913FCB4749B518A35A01FA67DC9B19C,
 	Item_Start_mAF304BC26FB5ED4C69F6534266EE4F082967E4D8,
 	Item_Update_m321607B5029856E4D4919213FDD9001A1C448E47,
 	Item_OnTriggerEnter_mC6104DA4B9378B5DE80AED61BACE43D416B5F594,
@@ -14927,18 +14927,18 @@ static Il2CppMethodPointer s_methodPointers[7561] =
 	People_AddWordsClear_m599FE8A076B8B30D6FB3ED8F8524038CD1F758CA,
 	People_Gender_mC37B042336F9CF000AAFA6061621E5847D8C1342,
 	People__ctor_mDC854A2933F72C954B5DF9C26452AB1462986C14,
-	U3CDisplaySBU3Ed__10__ctor_m07E0F4B54D2A8F656ACA9B00151353E299955F9E,
-	U3CDisplaySBU3Ed__10_System_IDisposable_Dispose_mFFCDF06A5E33A119FFB935478FDED466258281F2,
-	U3CDisplaySBU3Ed__10_MoveNext_m03C8B84B4E16D6333897C11E7259C3E5A6D05714,
-	U3CDisplaySBU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE4ECB9BBF8036384506D27703C770287DCDC0691,
-	U3CDisplaySBU3Ed__10_System_Collections_IEnumerator_Reset_mBC6C270E6063D4E72F7C31AAD331071DC8F1D767,
-	U3CDisplaySBU3Ed__10_System_Collections_IEnumerator_get_Current_m05BD9DAF3021D39B67E5622A8F7685AFB1D0AC1D,
-	U3CCloseSBU3Ed__11__ctor_mD94E727E2F29A796240B4E6D3A224389423B2072,
-	U3CCloseSBU3Ed__11_System_IDisposable_Dispose_mED43CF8231534D766AB24B155E9CEE496A1B9D3E,
-	U3CCloseSBU3Ed__11_MoveNext_mC3B9B9FDD8CA1AB9C514097641F41CFB5E2083E5,
-	U3CCloseSBU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m731F0945FB167038794C955A6FC5597A5BFA8294,
-	U3CCloseSBU3Ed__11_System_Collections_IEnumerator_Reset_m17A03FCC4F48FE7291B9264B85A273CAC05BAFFB,
-	U3CCloseSBU3Ed__11_System_Collections_IEnumerator_get_Current_mE9322E625202F1B13AB1BCB973B3D759162A83AF,
+	U3CDisplaySBU3Ed__12__ctor_m9C0A2DED5E18CB5400B525AF4E6842CA49B5021A,
+	U3CDisplaySBU3Ed__12_System_IDisposable_Dispose_mC1B2469A70194E45C23DF63421A2467113E03B35,
+	U3CDisplaySBU3Ed__12_MoveNext_m8026E134F558C58262432EC3665EA39A1310D8B4,
+	U3CDisplaySBU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m401E32F044E1A7E2A17EAD9F35610CFAB9C7B952,
+	U3CDisplaySBU3Ed__12_System_Collections_IEnumerator_Reset_mDED08CD57FABE0D38AFABBBD8269D9216646D56B,
+	U3CDisplaySBU3Ed__12_System_Collections_IEnumerator_get_Current_m72574F77D85B62A5186635DEC0C3DA6F6D1E9E8A,
+	U3CCloseSBU3Ed__13__ctor_mE416C8A2D75D6D453D6D040865FA8A6CFC6455CC,
+	U3CCloseSBU3Ed__13_System_IDisposable_Dispose_m92F1A48FF22C4694D1D38869FBC4C5A86DE7221E,
+	U3CCloseSBU3Ed__13_MoveNext_mD38771680114E9E931C1476C3179C2132A38F12E,
+	U3CCloseSBU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m14378E9DEC14584E32D781338FE904172DAD513B,
+	U3CCloseSBU3Ed__13_System_Collections_IEnumerator_Reset_m286047C9CE07B8EB665B474CFB5FA83885776A76,
+	U3CCloseSBU3Ed__13_System_Collections_IEnumerator_get_Current_m652DF221CDEFD36B93DA5965F5A23C52E11C6C7F,
 	PlayerMove_Start_m1ACFD10BF71998671B39878CE4208A1F880BE62E,
 	PlayerMove_Update_m2D580181CA2970EE505CEA4D2E722DD2F72F2D29,
 	PlayerMove__ctor_m259C024B72725E14EF78BC65889964013830B7B2,
