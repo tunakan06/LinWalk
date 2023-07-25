@@ -116,11 +116,11 @@
     <Compile Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Editor/Impulse/CinemachineImpulseChannelPropertyDrawer.cs" />
     <Compile Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Editor/PropertyDrawers/CinemachineTagFieldPropertyDrawer.cs" />
     <Compile Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Editor/Experimental/CinemachineNewVirtualCameraEditor.cs" />
-    <Compile Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Editor/Editors/CinemachineStateDrivenCameraEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Editor/Editors/CinemachineSameAsFollowTargetEditor.cs" />
-    <Compile Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Editor/Editors/CinemachineBasicMultiChannelPerlinEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Editor/Timeline/CinemachineShotClipEditor.cs" />
+    <Compile Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Editor/Editors/CinemachineBasicMultiChannelPerlinEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Editor/Experimental/CinemachineNewFreeLookEditor.cs" />
+    <Compile Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Editor/Editors/CinemachineStateDrivenCameraEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Editor/Timeline/CinemachineShotEditor.cs" />
   </ItemGroup>
   <ItemGroup>
