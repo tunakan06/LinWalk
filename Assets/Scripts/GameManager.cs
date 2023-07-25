@@ -23,7 +23,8 @@ public class GameManager : MonoBehaviour
     // ピッチ幅
     private float pitchBreadth = 0.5f;
 
-    // 
+    // スコア加点
+    private int addScore = 500;
 
     void Start()
     {
@@ -146,7 +147,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void ScoreAdd()
     {
-        score += 500;
+        score += addScore;
         scorePanelTxt.text = "SCORE: " + score.ToString();
     }
 }

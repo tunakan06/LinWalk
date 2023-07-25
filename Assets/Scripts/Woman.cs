@@ -6,6 +6,8 @@ using UnityEditor;
 //[CustomEditor(typeof(People))]
 public class Woman : People
 {
+    private string womanName = "Joddy";
+
     public override void AddWords()
     {
         talkingWords.Add("こんにちは");
@@ -15,7 +17,7 @@ public class Woman : People
 
     public override void Gender()
     {
-        this.name = "Joddy";
+        this.name = womanName;
         man = false;
         audioPitch = 2.5f;
     }

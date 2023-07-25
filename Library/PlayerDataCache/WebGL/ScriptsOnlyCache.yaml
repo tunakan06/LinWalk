@@ -116,35 +116,35 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1618}
+      Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 2074}
+      Script: {instanceID: 2118}
     - Class: 114
-      Script: {instanceID: 2382}
+      Script: {instanceID: 2444}
     - Class: 114
-      Script: {instanceID: 2982}
+      Script: {instanceID: 3116}
     - Class: 114
-      Script: {instanceID: 3066}
+      Script: {instanceID: 3208}
     - Class: 114
-      Script: {instanceID: 3162}
+      Script: {instanceID: 3312}
     - Class: 114
-      Script: {instanceID: 3246}
+      Script: {instanceID: 3402}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3642}
     - Class: 114
-      Script: {instanceID: 3474}
+      Script: {instanceID: 3646}
     - Class: 114
-      Script: {instanceID: 3770}
+      Script: {instanceID: 3970}
     - Class: 114
-      Script: {instanceID: 3860}
+      Script: {instanceID: 4070}
     - Class: 114
-      Script: {instanceID: 4314}
+      Script: {instanceID: 4576}
     - Class: 114
-      Script: {instanceID: 4396}
+      Script: {instanceID: 4664}
     - Class: 114
-      Script: {instanceID: 5278}
+      Script: {instanceID: 5614}
     - Class: 114
-      Script: {instanceID: 5362}
+      Script: {instanceID: 5702}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -205,39 +205,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1618}
+      Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 2074}
+      Script: {instanceID: 2118}
     - Class: 114
-      Script: {instanceID: 2506}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2982}
+      Script: {instanceID: 3116}
     - Class: 114
-      Script: {instanceID: 3162}
+      Script: {instanceID: 3312}
     - Class: 114
-      Script: {instanceID: 3244}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 3246}
+      Script: {instanceID: 3402}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3642}
     - Class: 114
-      Script: {instanceID: 3770}
+      Script: {instanceID: 3970}
     - Class: 114
-      Script: {instanceID: 4008}
+      Script: {instanceID: 4236}
     - Class: 114
-      Script: {instanceID: 4218}
+      Script: {instanceID: 4470}
     - Class: 114
-      Script: {instanceID: 4526}
+      Script: {instanceID: 4804}
     - Class: 114
-      Script: {instanceID: 4736}
+      Script: {instanceID: 5030}
     - Class: 114
-      Script: {instanceID: 5288}
+      Script: {instanceID: 5624}
     - Class: 114
-      Script: {instanceID: 5448}
+      Script: {instanceID: 5800}
     - Class: 114
-      Script: {instanceID: 5476}
+      Script: {instanceID: 5832}
     - Class: 114
-      Script: {instanceID: 5894}
+      Script: {instanceID: 6280}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -851,6 +851,12 @@ ScriptsOnlyBuild:
     className: UguiNovelTextBrPageIcon
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: FbxBuildTestAssets.dll
+    namespaceName: Autodesk.Fbx.BuildTests
+    className: ExportEmptyFbx
+  - hash:
+      serializedVersion: 2
       Hash: 4678e37e5f25172d96da84b348025ce2
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1097,16 +1103,16 @@ ScriptsOnlyBuild:
     className: AdvGuiManager
   - hash:
       serializedVersion: 2
-      Hash: 9902bfe343a93a2e9222e7092e147df1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RandomCharacters
-  - hash:
-      serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 9902bfe343a93a2e9222e7092e147df1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RandomCharacters
   - hash:
       serializedVersion: 2
       Hash: 8fbc134fd506d97c845cf2b715231396
@@ -1337,12 +1343,6 @@ ScriptsOnlyBuild:
     className: ThirdPersonCamera
   - hash:
       serializedVersion: 2
-      Hash: e22ab6c56e0f3611c4c1682fe8c1ec27
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UtageUguiSceneGallery
-  - hash:
-      serializedVersion: 2
       Hash: 822caf61a706548406bc3859974552a3
     assemblyName: Assembly-CSharp.dll
     namespaceName: Utage
@@ -1355,10 +1355,22 @@ ScriptsOnlyBuild:
     className: StaticAssetManager
   - hash:
       serializedVersion: 2
+      Hash: aca7af8fe7d69be6ab50e3184d28e519
+    assemblyName: Unity.Formats.Fbx.Runtime.dll
+    namespaceName: UnityEngine.Formats.Fbx.Exporter
+    className: FbxPrefab
+  - hash:
+      serializedVersion: 2
       Hash: 8472f9964de0f4185ed17022f3a383ec
     assemblyName: Assembly-CSharp.dll
     namespaceName: Utage
     className: SystemUiDebugMenu
+  - hash:
+      serializedVersion: 2
+      Hash: e22ab6c56e0f3611c4c1682fe8c1ec27
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UtageUguiSceneGallery
   - hash:
       serializedVersion: 2
       Hash: f4474314676dd303dc1cb18f564dfe06
@@ -1649,12 +1661,6 @@ ScriptsOnlyBuild:
     className: TextMeshProFloatingText
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UtageUguiStartChapter
-  - hash:
-      serializedVersion: 2
       Hash: 48aa5c3fbf062599b9a6643c83dd4c8b
     assemblyName: Assembly-CSharp.dll
     namespaceName: Utage
@@ -1691,6 +1697,12 @@ ScriptsOnlyBuild:
     className: NoiseSettings
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UtageUguiStartChapter
+  - hash:
+      serializedVersion: 2
       Hash: c6c815d003c4f859eb26fca6edd59e81
     assemblyName: Assembly-CSharp.dll
     namespaceName: Utage
@@ -1722,12 +1734,6 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.TestRunner.dll
-    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
-    className: PlayModeRunnerCallback
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: Utage
     className: SampleCharacterGrayOutControllerRecieveMessage
@@ -1743,6 +1749,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2213,16 +2225,16 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: 594b8323c640611c4d7630188727601e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityChan
-    className: FaceUpdate
-  - hash:
-      serializedVersion: 2
       Hash: 00a4a5d3c23688168c0c7d3ad8ef7ae5
     assemblyName: Assembly-CSharp.dll
     namespaceName: Utage
     className: UguiLocalizeTextSetting
+  - hash:
+      serializedVersion: 2
+      Hash: 594b8323c640611c4d7630188727601e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityChan
+    className: FaceUpdate
   - hash:
       serializedVersion: 2
       Hash: 3375c3d749f8f4cad889721b431bdc27
@@ -2279,12 +2291,6 @@ ScriptsOnlyBuild:
     className: UtageUguiConfig
   - hash:
       serializedVersion: 2
-      Hash: 7b3fb8290e8954b7f1dd6e7184824ac5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UtageUguiConfigTaggedMasterVolume
-  - hash:
-      serializedVersion: 2
       Hash: af56f77a30c1a2da1680c736a6f5c6e8
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -2295,6 +2301,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Utage
     className: AdvImportBook
+  - hash:
+      serializedVersion: 2
+      Hash: 7b3fb8290e8954b7f1dd6e7184824ac5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UtageUguiConfigTaggedMasterVolume
   - hash:
       serializedVersion: 2
       Hash: 81d3a789cb34e62a7a0b4e6e4588919f
@@ -2333,12 +2345,6 @@ ScriptsOnlyBuild:
     className: FishEye
   - hash:
       serializedVersion: 2
-      Hash: 9c3b447852b4dcea657cb66a3b45f8d0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Utage
-    className: UguiLetterBoxCanvasScaler
-  - hash:
-      serializedVersion: 2
       Hash: 7855e240bfe85debabb4fb0d6524ac52
     assemblyName: Assembly-CSharp.dll
     namespaceName: Utage
@@ -2349,6 +2355,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NavMesh_UI
+  - hash:
+      serializedVersion: 2
+      Hash: 9c3b447852b4dcea657cb66a3b45f8d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Utage
+    className: UguiLetterBoxCanvasScaler
   - hash:
       serializedVersion: 2
       Hash: fe1fdeffc2067077b2f1a90b210c2532
@@ -2435,12 +2447,6 @@ ScriptsOnlyBuild:
     className: AutoStartGame
   - hash:
       serializedVersion: 2
-      Hash: 8fddc51473a1758325fe740793f211be
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IK
-  - hash:
-      serializedVersion: 2
       Hash: e244702e0dc05782229aa524e4d757f5
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -2457,6 +2463,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineCollisionImpulseSource
+  - hash:
+      serializedVersion: 2
+      Hash: 8fddc51473a1758325fe740793f211be
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IK
   - hash:
       serializedVersion: 2
       Hash: 37de53a49708b087da4050fc1ca7a6ee
@@ -2671,4 +2683,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Title.unity
   - Assets/Scenes/MainGame.unity
-  playerPath: /Users/koubekisei/LinWalk2023022601
+  playerPath: /Users/koubekisei/LinWalk2023072501/LinWalk2023022601
