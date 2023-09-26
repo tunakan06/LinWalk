@@ -97,8 +97,8 @@
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxBindingTable.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxNull.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxDataType.cs" />
-    <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxAnimStack.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxPropertyNullELook.cs" />
+    <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxAnimStack.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxShape.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxPropertyEDecayType.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxTime.cs" />
@@ -119,16 +119,16 @@
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxAnimCurve.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxPropertyBool.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxPropertyString.cs" />
-    <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxGeometry.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxImplementation.cs" />
+    <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxGeometry.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxBindingTableBase.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxSkin.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxEmitter.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxPose.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/Globals.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxConnection.cs" />
-    <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxNodeAttribute.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxAnimCurveBase.cs" />
+    <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxNodeAttribute.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxLayerElement.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxDouble4x4.cs" />
     <Compile Include="Library/PackageCache/com.autodesk.fbx@4.1.2/Runtime/Scripts/FbxLayerElementTemplateFbxSurfaceMaterial.cs" />
@@ -444,26 +444,11 @@
     <Reference Include="unityplastic">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
-    <Reference Include="NPOI.OOXML">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.OOXML.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXml4Net">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.OpenXml4Net.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXmlFormats">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

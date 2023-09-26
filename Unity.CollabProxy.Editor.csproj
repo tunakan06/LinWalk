@@ -132,17 +132,17 @@
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Presenters/ChangesPresenter.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Components/TabView.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Views/Adapters/ListAdapters/HistoryEntryChangeListAdapter.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Assets/UiConstants.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Common/LocationAttribute.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Components/ProgressView.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Assets/UiConstants.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Presenters/IStartPresenter.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Components/ChangeListElements/HistoryChangeListElement.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Views/Adapters/IAdapterObserver.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Models/IStartModel.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Components/ChangeEntryGroup.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Settings/CollabSetting.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Settings/CollabSettings.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Models/Structures/IChangeEntry.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Settings/CollabSettings.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/EditorGameService/Analytics/EditorGameServiceAnalyticsSender.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Views/Adapters/ListAdapters/BaseListAdapter.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Models/Enums/ProjectStatus.cs" />
@@ -486,26 +486,11 @@
     <Reference Include="unityplastic">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
-    <Reference Include="NPOI.OOXML">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.OOXML.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXml4Net">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.OpenXml4Net.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXmlFormats">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

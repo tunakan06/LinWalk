@@ -66,8 +66,8 @@
     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.16/Rider/Editor/UnitTesting/CallbackInitializer.cs" />
     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.16/Rider/Editor/Util/SerializableVersion.cs" />
     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.16/Rider/Editor/ProjectGeneration/IGUIDGenerator.cs" />
-    <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.16/Rider/Editor/UnitTesting/SyncTestRunEventsHandler.cs" />
     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.16/Rider/Editor/Util/LibcNativeInterop.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.16/Rider/Editor/UnitTesting/SyncTestRunEventsHandler.cs" />
     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.16/Rider/Editor/UnitTesting/CallbackData.cs" />
     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.16/Rider/Editor/RiderScriptEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.16/Rider/Editor/ProjectGeneration/ProjectGeneration.cs" />
