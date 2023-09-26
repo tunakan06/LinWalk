@@ -56,64 +56,7 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/AssetDataBaseEx/MainAssetInfo.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/CreateNewProjectWindow.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Converter/AdvResourcesConverter.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/CustomCreateAsset.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Checker/AdvBuildChecker.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/AssetDataBaseEx/AssetInfo.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Converter/AdvFileListConverter.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/AssetDataBaseEx/SubAssetInfo.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/AboutUtage.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/Util/ExcelParser.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Viewer/AdvScenarioViewer.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/Util/PostProcessEditorSceneChanged.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/Window/OptimizedScrollView.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Tool/SelectableColorChanger.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Inspector/DicingTexturesInspcetor.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Project/AdvExcelImporter.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Inspector/AssetFileManagerInspector.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/Helper/SerializeHelper.cs" />
     <Compile Include="Assets/Rin New 3d - Anime Style/Advance Unlit Shader/Editor/AdvanceUnlitCustomGUI.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Inspector/LetterBoxCameraInspector.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Tool/ReferenceAssetChanger.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Checker/AdvSceneChecker.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/Window/TestCustomEditorWindow.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/AssetDataBaseEx/AssetDataBaseEx.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Tool/AdvExcelLocalizeConverter.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Project/AdvScenarioDataBuilderWindow.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Tool/ScriptCleanerWindow.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/Helper/MonoScriptHelper.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/MenuTool.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Converter/DicingConverter.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Inspector/DicingTexturePacker.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/Util/EdtiorToolKit.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Inspector/AdvEngineStarterInspector.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Checker/AdvEditorSettingWindow.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Viewer/AdvFileManagerViewer.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Tool/DeepDuplicator.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Project/ResourceImporter.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Project/AdvScenarioCharacterCountChecker.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Tool/FontChanger.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Project/AdvScenarioDataProject.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Tool/AdvExcelLocalizeMerger.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Lib/Window/CustomEditorWindow.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Viewer/AdvParamViewer.cs" />
-    <Compile Include="Assets/Utage/Editor/Scripts/Menu/Converter/AdvExcelCsvConverter.cs" />
-    <Compile Include="Assets/Utage/Scripts/GameLib/UI/Image/Avatar/Editor/AvatarDataInspector.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets/Utage/Editor/NPOI/NpoiLicense.txt" />
-    <None Include="Assets/Utage/Editor/NPOI/dotnet2/ICSharpCode.SharpZipLib.dll" />
-    <None Include="Assets/Utage/Editor/NPOI/dotnet2/NPOI.OpenXml4Net.XML" />
-    <None Include="Assets/Utage/Editor/NPOI/Read Me.txt" />
-    <None Include="Assets/Utage/Editor/NPOI/dotnet2/NPOI.dll" />
-    <None Include="Assets/Utage/Editor/NPOI/dotnet2/NPOI.OOXML.dll" />
-    <None Include="Assets/Utage/Editor/NPOI/dotnet2/NPOI.OpenXmlFormats.dll" />
-    <None Include="Assets/Utage/Editor/NPOI/Release Notes.txt" />
-    <None Include="Assets/Utage/Editor/NPOI/dotnet2/NPOI.XML" />
-    <None Include="Assets/Utage/Editor/NPOI/dotnet2/NPOI.OOXML.XML" />
-    <None Include="Assets/Utage/Editor/NPOI/dotnet2/NPOI.OpenXml4Net.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -398,26 +341,11 @@
     <Reference Include="unityplastic">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
-    <Reference Include="NPOI.OOXML">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.OOXML.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXml4Net">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.OpenXml4Net.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXmlFormats">
-      <HintPath>Assets/Utage/Editor/NPOI/dotnet2/NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
