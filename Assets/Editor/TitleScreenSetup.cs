@@ -23,7 +23,7 @@ public static class TitleScreenSetup
         }
 
         // Find or create Canvas
-        Canvas canvas = Object.FindObjectOfType<Canvas>();
+        Canvas canvas = Object.FindAnyObjectByType<Canvas>();
         GameObject canvasGO;
         if (canvas == null)
         {
@@ -71,6 +71,12 @@ public static class TitleScreenSetup
 
         // Add ProceduralStripedBG and set defaults
         var comp = bg.AddComponent<ProceduralStripedBG>();
+        if (comp == null)
+        {
+            Debug.LogError("[TitleScreenSetup] Failed to add ProceduralStripedBG component. Ensure the component exists in the project.");
+            Object.DestroyImmediate(bg);
+            return;
+        }
         comp.tileSize = 64;
         comp.widthTiles = 8;
         comp.heightTiles = 6;
