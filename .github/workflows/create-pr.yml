@@ -19,11 +19,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b add-title-pattern-bg
+          # create branch if it does not exist, otherwise checkout (avoid failing)
+          git checkout -b add-title-pattern-bg || git checkout add-title-pattern-bg
 
       - name: Add Editor script and README
         run: |
           mkdir -p Assets/Editor
+
           cat > Assets/Editor/TitleScreenSetup.cs <<'CS'
 #if UNITY_EDITOR
 using UnityEngine;
@@ -31,13 +33,118 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-...
+
+/// <summary>
+/// Adds a patterned RawImage background (ProceduralStripedBG) to the active scene's Canvas.
+/// Menu: Tools / Title Screen / Add Pattern Background
+/// </summary>
+public static class TitleScreenSetup
+{
+    [MenuItem("Tools/Title Screen/Add Pattern Background")]
+    public static void AddPatternBackground()
+    {
+        var activeScene = SceneManager.GetActiveScene();
+        if (!activeScene.isLoaded)
+        {
+            EditorUtility.DisplayDialog("No Scene Open",
+                "Please open the title scene you want to modify and run this command again.",
+                "OK");
+            return;
+        }
+
+        // Find or create Canvas
+        Canvas canvas = Object.FindObjectOfType<Canvas>();
+        GameObject canvasGO;
+        if (canvas == null)
+        {
+            canvasGO = new GameObject("Canvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
+            canvas = canvasGO.GetComponent<Canvas>();
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+
+            var cs = canvasGO.GetComponent<CanvasScaler>();
+            cs.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            cs.referenceResolution = new Vector2(1920, 1080);
+        }
+        else
+        {
+            canvasGO = canvas.gameObject;
+        }
+
+        // If background exists, offer overwrite
+        var existing = canvasGO.transform.Find("TitlePattern_Background");
+        if (existing != null)
+        {
+            if (!EditorUtility.DisplayDialog("Background Exists",
+                "A 'TitlePattern_Background' object already exists. Overwrite it?",
+                "Overwrite", "Cancel"))
+            {
+                return;
+            }
+            Object.DestroyImmediate(existing.gameObject);
+        }
+
+        // Create background RawImage
+        var bg = new GameObject("TitlePattern_Background", typeof(RawImage));
+        bg.transform.SetParent(canvasGO.transform, false);
+
+        var rt = bg.GetComponent<RectTransform>();
+        rt.anchorMin = Vector2.zero;
+        rt.anchorMax = Vector2.one;
+        rt.anchoredPosition = Vector2.zero;
+        rt.sizeDelta = Vector2.zero;
+
+        var raw = bg.GetComponent<RawImage>();
+        raw.raycastTarget = false;
+
+        // Place behind other UI
+        bg.transform.SetAsFirstSibling();
+
+        // Add ProceduralStripedBG and set defaults
+        var comp = bg.AddComponent<ProceduralStripedBG>();
+        comp.tileSize = 64;
+        comp.widthTiles = 8;
+        comp.heightTiles = 6;
+        comp.colorA = new Color(1f, 1f, 1f, 0.08f);
+        comp.colorB = new Color(0f, 0f, 0f, 0f);
+        comp.scrollSpeed = 0.5f;
+        comp.diagonalStripes = true;
+
+        // Mark scene dirty and save
+        EditorSceneManager.MarkSceneDirty(activeScene);
+        EditorSceneManager.SaveScene(activeScene);
+
+        EditorUtility.DisplayDialog("Done", "Title pattern background added and scene saved.", "OK");
+        Debug.Log("[TitleScreenSetup] Added TitlePattern_Background to scene: " + activeScene.name);
+    }
+}
 #endif
 CS
+
           cat > Assets/TitleBackground_README.md <<'MD'
 # Title Pattern Background — Usage
-This project includes a small editor utility...
+
+This project includes a small editor utility that adds a subtle, scrollable patterned background to a Canvas in your title scene.
+
+How to run
+1. Open the scene you want to modify (the title screen) in Unity Editor.
+2. From the top menu choose: Tools → Title Screen → Add Pattern Background
+   - If no Canvas exists one will be created.
+   - A GameObject named `TitlePattern_Background` (RawImage + ProceduralStripedBG) will be added as the first child of the Canvas.
+   - The scene will be marked dirty and saved automatically.
+
+Tweak appearance
+- Select the `TitlePattern_Background` GameObject in the Hierarchy.
+- Inspect the `ProceduralStripedBG` component and adjust:
+  - `tileSize`, `widthTiles`, `heightTiles` — pattern density
+  - `colorA` (alpha controls subtlety) and `colorB`
+  - `scrollSpeed` — how fast the pattern moves
+  - `diagonalStripes` — toggle diagonal/vertical stripes
+
+Notes
+- The RawImage created has `raycastTarget = false` so it won't block UI interactions.
+- This tool modifies the currently open scene in the Editor — it does not change build settings.
 MD
+
           git add Assets/Editor/TitleScreenSetup.cs Assets/TitleBackground_README.md
           git commit -m "Add Editor tool to insert patterned RawImage background into title scene" || echo "No changes to commit"
           git push --set-upstream origin add-title-pattern-bg
@@ -49,8 +156,17 @@ MD
           script: |
             const title = "Add Editor tool to insert patterned RawImage background into title scene";
             const body = `概要
-タイトル画面を控えめに装飾するための Unity Editor メニューを追加します...
-`;
+    タイトル画面を控えめに装飾するための Unity Editor メニューを追加します。メニュー実行により、開いているシーンの Canvas に対してフルスクリーンの RawImage（ProceduralStripedBG コンポーネント付き）を挿入できます。外部素材は不要で、軽い模様＋ゆっくりスクロールの背景を手早く追加するためのツールです。
+
+    追加ファイル
+    - Assets/Editor/TitleScreenSetup.cs
+    - Assets/TitleBackground_README.md
+
+    動作概要
+    - ユーザーがメニューを実行したときのみ現在のシーンを変更します（自動でシーンを勝手に編集しません）。
+    - シーンに Canvas が無ければ新規作成します。
+    - Canvas の「最背面」に RawImage を作り、名前を TitlePattern_Background にします。既に存在する場合は上書き確認ダイアログを出します。
+    - 実行後にシーンを保存します。`;
             const pr = await github.rest.pulls.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -59,7 +175,8 @@ MD
               title: title,
               body: body
             });
-            core.setOutput('pr_url', pr.data.html_url);
+            return pr.data.html_url
 
       - name: Show PR URL
-        run: echo "PR created: ${{ steps.create_pr.outputs.pr_url }}"
+        run: |
+          echo "PR created: ${{ steps.create_pr.outputs.result }}"
