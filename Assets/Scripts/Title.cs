@@ -49,6 +49,10 @@ public class Title : MonoBehaviour
     {
         // メインカメラのキャッシュ
         mainCamera = Camera.main;
+        if (mainCamera == null)
+        {
+            Debug.LogWarning("[Title] Main camera not found. Background gradient will not be applied.");
+        }
 
         // グラデーションカラー数のキャッシュ
         if (gradientColors != null)
