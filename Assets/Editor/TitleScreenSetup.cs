@@ -35,6 +35,9 @@ public static class TitleScreenSetup
             var cs = canvasGO.GetComponent<CanvasScaler>();
             cs.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             cs.referenceResolution = new Vector2(1920, 1080);
+
+            // allow undo for created canvas
+            Undo.RegisterCreatedObjectUndo(canvasGO, "Create Canvas");
         }
         else
         {
@@ -51,7 +54,8 @@ public static class TitleScreenSetup
             {
                 return;
             }
-            Object.DestroyImmediate(existing.gameObject);
+            // use undo-aware destroy so user can undo
+            Undo.DestroyObjectImmediate(existing.gameObject);
         }
 
         // Create background RawImage
@@ -80,11 +84,22 @@ public static class TitleScreenSetup
         comp.scrollSpeed = 0.5f;
         comp.diagonalStripes = true;
 
-        // Mark scene dirty and save
-        EditorSceneManager.MarkSceneDirty(activeScene);
-        EditorSceneManager.SaveScene(activeScene);
+        // allow undo for created background
+        Undo.RegisterCreatedObjectUndo(bg, "Add TitlePattern_Background");
 
-        EditorUtility.DisplayDialog("Done", "Title pattern background added and scene saved.", "OK");
+        // Mark scene dirty and ask to save
+        EditorSceneManager.MarkSceneDirty(activeScene);
+
+        if (EditorUtility.DisplayDialog("Save Scene?", "The scene was modified. Save now?", "Save", "Don't Save"))
+        {
+            EditorSceneManager.SaveScene(activeScene);
+            EditorUtility.DisplayDialog("Done", "Title pattern background added and scene saved.", "OK");
+        }
+        else
+        {
+            EditorUtility.DisplayDialog("Done", "Title pattern background added. Scene not saved (unsaved changes present).", "OK");
+        }
+
         Debug.Log("[TitleScreenSetup] Added TitlePattern_Background to scene: " + activeScene.name);
     }
 }
