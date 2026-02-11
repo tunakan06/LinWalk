@@ -22,7 +22,7 @@ public class TitleScreenSetup
             }
 
             // Find or create Canvas
-            Canvas canvas = GameObject.FindObjectOfType<Canvas>();
+            Canvas canvas = Object.FindObjectOfType<Canvas>();
             if (canvas == null)
             {
                 canvas = CreateCanvas();
@@ -51,7 +51,7 @@ public class TitleScreenSetup
             // Create the RawImage background
             GameObject bgObject = new GameObject(BackgroundObjectName);
             bgObject.transform.SetParent(canvas.transform);
-            bgObject.transform.SetAsFirstSibling(); // Place at the front (drawn at the back)
+            bgObject.transform.SetAsFirstSibling(); // Place as first sibling (renders at the back in UI layer order)
 
             // Add RawImage component
             RawImage rawImage = bgObject.AddComponent<RawImage>();
