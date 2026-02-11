@@ -24,7 +24,7 @@ public static class TitleScreenSetup
         }
 
         // Find or create Canvas
-        Canvas canvas = Object.FindObjectOfType<Canvas>();
+        Canvas canvas = Object.FindFirstObjectByType<Canvas>();
         GameObject canvasGO;
         if (canvas == null)
         {

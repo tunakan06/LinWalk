@@ -2,14 +2,14 @@
 
 This project includes a small editor utility that adds a subtle, scrollable patterned background to a Canvas in your title scene.
 
-How to run
+How to Run
 1. Open the scene you want to modify (the title screen) in Unity Editor.
 2. From the top menu choose: Tools → Title Screen → Add Pattern Background
    - If no Canvas exists one will be created.
    - A GameObject named `TitlePattern_Background` (RawImage + ProceduralStripedBG) will be added as the first child of the Canvas.
    - The scene will be marked dirty and saved automatically.
 
-Tweak appearance
+Tweak Appearance
 - Select the `TitlePattern_Background` GameObject in the Hierarchy.
 - Inspect the `ProceduralStripedBG` component and adjust:
   - `tileSize`, `widthTiles`, `heightTiles` — pattern density
