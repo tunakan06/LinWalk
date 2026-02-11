@@ -26,6 +26,20 @@ public class Title : MonoBehaviour
     // BGM用
     [SerializeField] private AudioSource bgmSource;
 
+    // 背景色のグラデーション変化用
+    [Header("Background Gradient")]
+    [SerializeField] private Color[] gradientColors = new Color[]
+    {
+        new Color(0.5f, 0f, 0.5f),    // 紫
+        new Color(0f, 0f, 1f),        // 青
+        new Color(0f, 1f, 1f),        // シアン
+        new Color(0f, 1f, 0f),        // 緑
+        new Color(1f, 1f, 0f),        // 黄
+        new Color(1f, 0.5f, 0f),      // オレンジ
+        new Color(1f, 0.4f, 0.7f)     // ピンク
+    };
+    [SerializeField] private float gradientSpeed = 0.5f;
+
     private Vector3 originalTitleScale;
     private bool isFading = false;
 
@@ -60,6 +74,17 @@ public class Title : MonoBehaviour
 
     void Update()
     {
+        // 背景色のグラデーション変化
+        if (gradientColors != null && gradientColors.Length > 0 && Camera.main != null)
+        {
+            float t = Time.time * gradientSpeed;
+            int colorCount = gradientColors.Length;
+            int currentIndex = Mathf.FloorToInt(t) % colorCount;
+            int nextIndex = (currentIndex + 1) % colorCount;
+            float lerpFactor = t - Mathf.Floor(t);
+            Camera.main.backgroundColor = Color.Lerp(gradientColors[currentIndex], gradientColors[nextIndex], lerpFactor);
+        }
+
         // タイトルテキストのパルスアニメーション
         if (titleTransform != null)
         {
