@@ -30,13 +30,13 @@ public class Title : MonoBehaviour
     [Header("Background Gradient")]
     [SerializeField] private Color[] gradientColors = new Color[]
     {
-        new Color(0.5f, 0f, 0.5f),    // 紫
-        new Color(0f, 0f, 1f),        // 青
-        new Color(0f, 1f, 1f),        // シアン
-        new Color(0f, 1f, 0f),        // 緑
-        new Color(1f, 1f, 0f),        // 黄
-        new Color(1f, 0.5f, 0f),      // オレンジ
-        new Color(1f, 0.4f, 0.7f)     // ピンク
+        new Color(0.71f, 0.52f, 0.9f),   // 柔らかいラベンダー
+        new Color(0.53f, 0.81f, 0.92f),  // 淡い水色
+        new Color(0.6f, 0.9f, 0.75f),    // ミントグリーン
+        new Color(1f, 0.8f, 0.7f),       // 淡いピーチ
+        new Color(0.95f, 0.6f, 0.73f),   // ソフトピンク
+        new Color(0.98f, 0.7f, 0.6f),    // 淡いサーモン
+        new Color(0.8f, 0.7f, 0.9f)      // ソフトラベンダー
     };
     [SerializeField] private float gradientSpeed = 0.5f;
 
