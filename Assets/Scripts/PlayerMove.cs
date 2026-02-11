@@ -12,6 +12,7 @@ public class PlayerMove : MonoBehaviour
     private float playerRunSpeed = 5.0f;
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
+    private GameManager gameManager;
 
     private void Start()
     {
@@ -19,6 +20,13 @@ public class PlayerMove : MonoBehaviour
         controller.center = new Vector3(0, 1, 0);
         controller.radius = 0.25f;
         controller.height = 1.85f;
+
+        // GameManagerの参照をキャッシュ
+        GameObject gameManagerObject = GameObject.FindGameObjectWithTag("GameManager");
+        if (gameManagerObject != null)
+        {
+            gameManager = gameManagerObject.GetComponent<GameManager>();
+        }
 
         //animator = gameObject.AddComponent<Animator>();
     }
@@ -67,8 +75,12 @@ public class PlayerMove : MonoBehaviour
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
-        // お辞儀
-        if (Input.GetKey(KeyCode.F) && (move.magnitude == 0.0f))
+        
+        // 会話中かどうかの判定
+        bool isTalking = gameManager != null && gameManager.messageWindow.activeSelf;
+        
+        // お辞儀（会話中は無効にする）
+        if (Input.GetKey(KeyCode.F) && (move.magnitude == 0.0f) && !isTalking)
         {
             animator.SetBool("Bowing", true);
         }
