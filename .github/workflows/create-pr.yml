@@ -19,9 +19,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # create branch if it does not exist, otherwise checkout
           git fetch origin add-title-pattern-bg || true
-          git checkout -b add-title-pattern-bg || git checkout add-title-pattern-bg
+          if git show-ref --verify --quiet refs/heads/add-title-pattern-bg; then
+            git checkout add-title-pattern-bg
+          else
+            git checkout -b add-title-pattern-bg
+          fi
 
       - name: Add Editor script and README
         run: |
@@ -148,12 +151,31 @@ MD
 
           git add Assets/Editor/TitleScreenSetup.cs Assets/TitleBackground_README.md
           git commit -m "Add Editor tool to insert patterned RawImage background into title scene" || echo "No changes to commit"
-          git push --set-upstream origin add-title-pattern-bg
+          git push --set-upstream origin add-title-pattern-bg || true
 
-      - id: create_pr
-        name: Create pull request via API
+      - name: Create pull request
         uses: actions/github-script@v6
         with:
           script: |
-            const title = "Add Editor tool to insert patterned
-
+            const title = "Add Editor tool to insert patterned RawImage background into title scene";
+            const body = `概要
+タイトル画面を控えめに装飾するための Unity Editor メニューを追加します。メニュー実行により、開いているシーンの Canvas に対してフルスクリーンの RawImage（ProceduralStripedBG コンポーネント付き）を挿入できます。外部素材は不要で、軽い模様＋ゆっくりスクロールの背景を手早く追加するためのツールです。
+
+追加ファイル
+- Assets/Editor/TitleScreenSetup.cs
+- Assets/TitleBackground_README.md
+
+動作概要
+- ユーザーがメニューを実行したときのみ現在のシーンを変更します（自動でシーンを勝手に編集しません）。
+- シーンに Canvas が無ければ新規作成します。
+- Canvas の「最背面」に RawImage を作り、名前を TitlePattern_Background にします。既に存在する場合は上書き確認ダイアログを出します。
+- 実行後にシーンを保存します。`;
+            const pr = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: 'add-title-pattern-bg',
+              base: 'main',
+              title: title,
+              body: body
+            });
+            console.log("PR URL: " + pr.data.html_url);
