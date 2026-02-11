@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         messageWindowI = messageWindow.GetComponent<Image>();
+        messageWindow.SetActive(false);
         nameText.text = "";
         talkingText.text = "";
         clearFlag = false;

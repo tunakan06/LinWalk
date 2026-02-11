@@ -19,6 +19,7 @@ public class Title : MonoBehaviour
     // シーン遷移時のフェードアウト用
     [SerializeField] private Image fadePanel;
     [SerializeField] private float fadeDuration = 0.8f;
+    [SerializeField] private bool startImmediately = true;
 
     // パーティクルエフェクト用
     [SerializeField] private ParticleSystem titleParticles;
@@ -32,6 +33,7 @@ public class Title : MonoBehaviour
     [SerializeField] private Color backgroundColorB = new Color(0.15f, 0.80f, 0.45f);
     [SerializeField] private float gradientSpeed = 0.12f;
     [SerializeField] private bool forceBlueGreenOnStart = true;
+    [SerializeField] private float earlyInputGraceSeconds = 0.35f;
 
     private Vector3 originalTitleScale;
     private bool isFading = false;
@@ -104,9 +106,14 @@ public class Title : MonoBehaviour
         }
 
         // シーン遷移（フェード中は二重遷移を防止）
-        if (Input.GetKeyDown(KeyCode.Z) && !isFading)
+        if (!isFading && IsStartInputDetected())
         {
-            if (fadePanel != null)
+            if (startImmediately)
+            {
+                isFading = true;
+                SceneManager.LoadScene("MainGame");
+            }
+            else if (fadePanel != null)
             {
                 StartCoroutine(FadeOutAndLoadScene());
             }
@@ -116,6 +123,29 @@ public class Title : MonoBehaviour
                 SceneManager.LoadScene("MainGame");
             }
         }
+    }
+
+    private bool IsStartInputDetected()
+    {
+        bool down =
+            Input.GetKeyDown(KeyCode.Z) ||
+            Input.GetKeyDown(KeyCode.Return) ||
+            Input.GetKeyDown(KeyCode.Space) ||
+            Input.GetButtonDown("Submit");
+
+        if (down) return true;
+
+        // ロード直後の1回目入力取りこぼし対策（押しっぱなしも許容）
+        if (Time.timeSinceLevelLoad <= earlyInputGraceSeconds)
+        {
+            bool held =
+                Input.GetKey(KeyCode.Z) ||
+                Input.GetKey(KeyCode.Return) ||
+                Input.GetKey(KeyCode.Space);
+            if (held) return true;
+        }
+
+        return false;
     }
 
     /// <summary>
