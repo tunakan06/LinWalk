@@ -78,7 +78,15 @@ public class Title : MonoBehaviour
         // シーン遷移（フェード中は二重遷移を防止）
         if (Input.GetKeyDown(KeyCode.Z) && !isFading)
         {
-            StartCoroutine(FadeOutAndLoadScene());
+            if (fadePanel != null)
+            {
+                StartCoroutine(FadeOutAndLoadScene());
+            }
+            else
+            {
+                // フェードパネルがない場合はすぐに遷移
+                SceneManager.LoadScene("MainGame");
+            }
         }
     }
 
@@ -89,28 +97,19 @@ public class Title : MonoBehaviour
     {
         isFading = true;
 
-        if (fadePanel != null)
+        float elapsedTime = 0f;
+        Color color = fadePanel.color;
+
+        while (elapsedTime < fadeDuration)
         {
-            float elapsedTime = 0f;
-            Color color = fadePanel.color;
-
-            while (elapsedTime < fadeDuration)
-            {
-                elapsedTime += Time.deltaTime;
-                color.a = Mathf.Clamp01(elapsedTime / fadeDuration);
-                fadePanel.color = color;
-                yield return null;
-            }
-
-            // 完全に不透明にする
-            color.a = 1f;
+            elapsedTime += Time.deltaTime;
+            color.a = Mathf.Clamp01(elapsedTime / fadeDuration);
             fadePanel.color = color;
+            yield return null;
         }
-        else
-        {
-            // フェードパネルがない場合は待機時間だけ設ける
-            yield return new WaitForSeconds(fadeDuration);
-        }
+
+        color.a = 1f;
+        fadePanel.color = color;
 
         // シーン遷移
         SceneManager.LoadScene("MainGame");
