@@ -57,20 +57,26 @@ public class People : MonoBehaviour
             gameManager.CloseMessageWindow();
         }
 
+
         if (speechBubbleOb.activeSelf == true)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F))  // GetKey → GetKeyDown に変更
             {
                 var diff = (player.transform.position - transform.position).normalized;
                 transform.rotation = Quaternion.LookRotation(diff);
-                
+
                 if (gameManager.messageWindow.activeSelf == false)
                 {
+                    // 初回だけお辞儀
+                    player.GetComponent<Animator>().SetBool("Bowing", true);
+
                     gameManager.DisplayMessageWindow(talkingWords, this.gameObject.name);
                     gameManager.ProceedingTalk(audioSource, audioPitch);
                 }
                 else
                 {
+                    // 2回目以降はお辞儀しない
+                    player.GetComponent<Animator>().SetBool("Bowing", false);
                     gameManager.ProceedingTalk(audioSource, audioPitch);
                 }
             }

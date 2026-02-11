@@ -67,12 +67,12 @@ public class PlayerMove : MonoBehaviour
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
-        // お辞儀
+        // お辞儀 - 会話開始時だけ
         if (Input.GetKeyDown(KeyCode.F) && (move.magnitude == 0.0f))
         {
             animator.SetBool("Bowing", true);
         }
-        else if (Input.GetKeyUp(KeyCode.F))
+        else if (!animator.GetBool("Bowing") || Input.GetKeyUp(KeyCode.F))
         {
             animator.SetBool("Bowing", false);
         }
