@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638258666160000000
+      ticks: 639064101960000000
     m_Hash: 2473511348
   m_LockFileStatus:
     m_FilePath: /Users/koubekisei/LinWalk/Packages/packages-lock.json
@@ -13,14 +13,14 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638258666160000000
-    m_Hash: 1674519971
+      ticks: 639064102200000000
+    m_Hash: 4210023728
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: /Users/koubekisei/LinWalk/Packages
-m_EditorVersion: 2021.3.15f1 (e8e88683f834)
+m_EditorVersion: 2021.3.18f1 (3129e69bc0c7)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
@@ -163,11 +163,26 @@ m_ResolvedPackages:
     - 2.9.4
     - 2.9.5
     - 2.9.7
+    - 2.10.0
+    - 2.10.1
+    - 2.10.2
+    - 2.10.3
+    - 2.10.4
+    - 2.10.5
     - 3.0.0-pre.3
     - 3.0.0-pre.4
     - 3.0.0-pre.5
     - 3.0.0-pre.6
     - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    - 3.1.4
+    - 3.1.5
     compatible:
     - 2.8.9
     - 2.9.0-pre.1
@@ -177,6 +192,10 @@ m_ResolvedPackages:
     - 2.9.4
     - 2.9.5
     - 2.9.7
+    - 2.10.0
+    - 2.10.1
+    - 2.10.2
+    - 2.10.3
     verified: 2.8.9
   dependencies:
   - name: com.unity.test-framework
@@ -321,38 +340,70 @@ m_ResolvedPackages:
     - 2.0.3
     - 2.0.4
     - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
+    - 2.1.0
+    - 2.2.0
+    - 2.3.1
+    - 2.4.3
+    - 2.4.4
+    - 2.5.1
+    - 2.5.2
+    - 2.6.0
+    - 2.7.1
+    - 2.8.1
+    - 2.8.2
+    - 2.9.1
+    - 2.9.2
+    - 2.9.3
+    - 2.10.0
+    - 2.10.1
+    - 2.10.2
+    - 2.11.2
+    - 2.11.3
     compatible:
-    - 1.17.7
-    - 2.0.0-preview.6
-    - 2.0.0-preview.8
-    - 2.0.0-preview.15
-    - 2.0.0-preview.17
-    - 2.0.0-preview.20
-    - 2.0.0-preview.21
-    - 2.0.0-preview.22
     - 2.0.0
     - 2.0.1
     - 2.0.3
     - 2.0.4
     - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
-    verified: 1.17.7
+    - 2.1.0
+    - 2.2.0
+    - 2.3.1
+    - 2.4.3
+    - 2.4.4
+    - 2.5.1
+    - 2.5.2
+    - 2.6.0
+    - 2.7.1
+    - 2.8.1
+    - 2.8.2
+    - 2.9.1
+    - 2.9.2
+    - 2.9.3
+    - 2.10.0
+    - 2.10.1
+    - 2.10.2
+    - 2.11.2
+    - 2.11.3
+    verified: 2.0.7
   dependencies:
   - name: com.unity.services.core
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.services.core
-    version: 1.6.0
-  - name: com.unity.modules.unitywebrequest
+    version: 1.7.0
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.0.2
-  - name: com.unity.modules.androidjni
+  - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   keywords:
   - backup
@@ -387,7 +438,7 @@ m_ResolvedPackages:
     revision: 1641a631fd39029595decb52bdfb641b32ed194c
     path: 
   unityLifecycle:
-    version: 1.17.7
+    version: 2.0.0
     nextVersion: 
 - packageId: com.unity.formats.fbx@4.1.3
   testable: 0
@@ -441,8 +492,13 @@ m_ResolvedPackages:
     - 5.0.0-pre.1
     - 5.0.0
     - 5.1.0-pre.1
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
+    - 5.1.4
+    - 5.1.5
     compatible:
-    - 4.1.2
     - 4.1.3
     - 4.2.0-pre.1
     - 4.2.0
@@ -450,25 +506,31 @@ m_ResolvedPackages:
     - 5.0.0-pre.1
     - 5.0.0
     - 5.1.0-pre.1
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
+    - 5.1.4
+    - 5.1.5
     verified: 4.1.3
   dependencies:
-  - name: com.unity.timeline
-    version: 1.5.2
   - name: com.autodesk.fbx
     version: 4.1.2
+  - name: com.unity.timeline
+    version: 1.5.2
   resolvedDependencies:
+  - name: com.autodesk.fbx
+    version: 4.1.2
   - name: com.unity.timeline
     version: 1.6.4
-  - name: com.unity.modules.director
-    version: 1.0.0
   - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
   - name: com.unity.modules.particlesystem
     version: 1.0.0
-  - name: com.autodesk.fbx
-    version: 4.1.2
   keywords:
   - fbx
   - animation
@@ -494,7 +556,7 @@ m_ResolvedPackages:
     revision: 8858388b679f626b4b9cc2ec21ab367b95f16125
     path: 
   unityLifecycle:
-    version: 4.1.2
+    version: 4.1.3
     nextVersion: 
 - packageId: com.unity.ide.rider@3.0.16
   testable: 0
@@ -556,15 +618,35 @@ m_ResolvedPackages:
     - 3.0.21
     - 3.0.22
     - 3.0.24
+    - 3.0.25
+    - 3.0.26
+    - 3.0.27
+    - 3.0.28
+    - 3.0.31
+    - 3.0.34
+    - 3.0.35
+    - 3.0.36
+    - 3.0.37
+    - 3.0.38
+    - 3.0.39
     compatible:
-    - 3.0.16
-    - 3.0.17
     - 3.0.18
     - 3.0.20
     - 3.0.21
     - 3.0.22
     - 3.0.24
-    verified: 3.0.24
+    - 3.0.25
+    - 3.0.26
+    - 3.0.27
+    - 3.0.28
+    - 3.0.31
+    - 3.0.34
+    - 3.0.35
+    - 3.0.36
+    - 3.0.37
+    - 3.0.38
+    - 3.0.39
+    verified: 3.0.39
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -591,7 +673,7 @@ m_ResolvedPackages:
     revision: 9b718d58b8f7a34e564f2c79af6d2ca788e929d4
     path: 
   unityLifecycle:
-    version: 3.0.16
+    version: 3.0.18
     nextVersion: 
 - packageId: com.unity.ide.visualstudio@2.0.16
   testable: 0
@@ -636,11 +718,24 @@ m_ResolvedPackages:
     - 2.0.16
     - 2.0.17
     - 2.0.18
+    - 2.0.20
+    - 2.0.21
+    - 2.0.22
+    - 2.0.23
+    - 2.0.25
+    - 2.0.26
+    - 2.0.27
     compatible:
-    - 2.0.16
     - 2.0.17
     - 2.0.18
-    verified: 2.0.18
+    - 2.0.20
+    - 2.0.21
+    - 2.0.22
+    - 2.0.23
+    - 2.0.25
+    - 2.0.26
+    - 2.0.27
+    verified: 2.0.27
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
@@ -673,7 +768,7 @@ m_ResolvedPackages:
     revision: c01855ef6461b821ab0226135e96a4ee86de96be
     path: 
   unityLifecycle:
-    version: 2.0.16
+    version: 2.0.17
     nextVersion: 
 - packageId: com.unity.ide.vscode@1.2.5
   testable: 0
@@ -799,6 +894,14 @@ m_ResolvedPackages:
     - 1.3.5
     - 1.3.7
     - 1.3.8
+    - 1.3.9
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.4.4
+    - 1.4.5
+    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -814,6 +917,14 @@ m_ResolvedPackages:
     - 1.3.5
     - 1.3.7
     - 1.3.8
+    - 1.3.9
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.4.4
+    - 1.4.5
+    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -976,21 +1087,47 @@ m_ResolvedPackages:
     - 3.0.4
     - 3.0.5
     - 3.0.6
+    - 3.0.7
+    - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
     - 3.2.0-pre.5
+    - 3.2.0-pre.6
+    - 3.2.0-pre.7
+    - 3.2.0-pre.8
+    - 3.2.0-pre.9
+    - 3.2.0-pre.10
+    - 3.2.0-pre.11
+    - 3.2.0-pre.12
+    - 3.2.0-pre.13
+    - 3.2.0-pre.14
+    - 3.2.0-pre.15
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     compatible:
     - 3.0.6
+    - 3.0.7
+    - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
     - 3.2.0-pre.5
-    verified: 3.0.6
+    - 3.2.0-pre.6
+    - 3.2.0-pre.7
+    - 3.2.0-pre.8
+    - 3.2.0-pre.9
+    - 3.2.0-pre.10
+    - 3.2.0-pre.11
+    - 3.2.0-pre.12
+    - 3.2.0-pre.13
+    - 3.2.0-pre.14
+    - 3.2.0-pre.15
+    verified: 3.0.9
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -1126,11 +1263,19 @@ m_ResolvedPackages:
     - 1.7.3
     - 1.7.4
     - 1.7.5
+    - 1.7.6
+    - 1.7.7
     - 1.8.0
     - 1.8.1
     - 1.8.2
     - 1.8.3
     - 1.8.4
+    - 1.8.5
+    - 1.8.6
+    - 1.8.7
+    - 1.8.8
+    - 1.8.9
+    - 1.8.10
     compatible:
     - 1.6.4
     - 1.6.5
@@ -1142,25 +1287,32 @@ m_ResolvedPackages:
     - 1.7.3
     - 1.7.4
     - 1.7.5
+    - 1.7.6
+    - 1.7.7
     - 1.8.0
     - 1.8.1
     - 1.8.2
     - 1.8.3
     - 1.8.4
+    - 1.8.5
+    - 1.8.6
+    - 1.8.7
+    - 1.8.8
+    - 1.8.9
     verified: 1.6.5
   dependencies:
+  - name: com.unity.modules.audio
+    version: 1.0.0
   - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
-  - name: com.unity.modules.audio
-    version: 1.0.0
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.director
-    version: 1.0.0
   - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
@@ -1219,6 +1371,7 @@ m_ResolvedPackages:
     - 1.0.0
     - 3.0.0-exp.1
     - 3.0.0-exp.3
+    - 3.0.0-exp.4
     compatible:
     - 1.0.0
     verified: 1.0.0
@@ -3140,8 +3293,11 @@ m_ResolvedPackages:
     - 5.0.0-pre.1
     - 5.0.0
     - 5.1.0-pre.1
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
     compatible:
-    - 4.1.1
     - 4.1.2
     - 4.2.0-pre.1
     - 4.2.0
@@ -3149,6 +3305,10 @@ m_ResolvedPackages:
     - 5.0.0-pre.1
     - 5.0.0
     - 5.1.0-pre.1
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
     verified: 4.1.2
   dependencies: []
   resolvedDependencies: []
@@ -3177,14 +3337,14 @@ m_ResolvedPackages:
     revision: 6317dcfb6dfe9e3f78223d75a826117cf6e83d6d
     path: 
   unityLifecycle:
-    version: 4.1.1
+    version: 4.1.2
     nextVersion: 
-- packageId: com.unity.services.core@1.6.0
+- packageId: com.unity.services.core@1.7.0
   testable: 0
   isDirectDependency: 0
-  version: 1.6.0
+  version: 1.7.0
   source: 1
-  resolvedPath: /Users/koubekisei/LinWalk/Library/PackageCache/com.unity.services.core@1.6.0
+  resolvedPath: /Users/koubekisei/LinWalk/Library/PackageCache/com.unity.services.core@1.7.0
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -3226,28 +3386,48 @@ m_ResolvedPackages:
     - 1.8.2
     - 1.9.0
     - 1.10.1
+    - 1.11.0
+    - 1.12.0
+    - 1.12.1
+    - 1.12.2
+    - 1.12.4
+    - 1.12.5
+    - 1.13.0
+    - 1.14.0
+    - 1.15.1
+    - 1.15.2
+    - 1.16.0
     compatible:
-    - 1.6.0
     - 1.7.0
     - 1.7.1
     - 1.8.1
     - 1.8.2
     - 1.9.0
     - 1.10.1
-    verified: 1.6.0
+    - 1.11.0
+    - 1.12.0
+    - 1.12.1
+    - 1.12.2
+    - 1.12.4
+    - 1.12.5
+    - 1.13.0
+    - 1.14.0
+    - 1.15.1
+    - 1.15.2
+    verified: 1.7.1
   dependencies:
-  - name: com.unity.modules.unitywebrequest
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.0.2
-  - name: com.unity.modules.androidjni
+  - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.unitywebrequest
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.0.2
-  - name: com.unity.modules.androidjni
+  - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   keywords: []
   registry:
@@ -3260,16 +3440,16 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638030857680000000
+  datePublishedTicks: 638059514260000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: 815a0c96703c69956fde4fc798e35dd8d0cc3af1
+    revision: 08a8fcaac21b4eebbb92708e367ad3a276b6f5a6
     path: 
   unityLifecycle:
-    version: 1.6.0
+    version: 1.7.0
     nextVersion: 
 - packageId: com.unity.nuget.newtonsoft-json@3.0.2
   testable: 0
@@ -3316,11 +3496,13 @@ m_ResolvedPackages:
     - 3.1.0
     - 3.2.0
     - 3.2.1
+    - 3.2.2
     compatible:
     - 3.0.2
     - 3.1.0
     - 3.2.0
     - 3.2.1
+    - 3.2.2
     verified: 3.0.2
   dependencies: []
   resolvedDependencies: []
