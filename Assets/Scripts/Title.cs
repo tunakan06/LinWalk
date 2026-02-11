@@ -75,7 +75,7 @@ public class Title : MonoBehaviour
         }
 
         // シーン遷移（フェード中は二重遷移を防止）
-        if (Input.GetKey(KeyCode.Z) && !isFading)
+        if (Input.GetKeyDown(KeyCode.Z) && !isFading)
         {
             StartCoroutine(FadeOutAndLoadScene());
         }
