@@ -346,6 +346,7 @@
 "Assets/Scripts/Item.cs"
 "Assets/Scripts/People.cs"
 "Assets/Scripts/PlayerMove.cs"
+"Assets/Scripts/ProceduralStripedBG.cs"
 "Assets/Scripts/Teddy.cs"
 "Assets/Scripts/Title.cs"
 "Assets/Scripts/Woman.cs"
