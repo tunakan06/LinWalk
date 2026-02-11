@@ -163,8 +163,8 @@
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/RemoteHelpers/PlayerConnectionMessageIds.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/NUnitExtensions/Commands/EnumerableTestMethodCommand.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/Utils/AssemblyProvider/AssemblyLoadProxy.cs" />
-    <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/Utils/PrebuildSceneSetupAttribute.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/Assertions/UnityTestTimeoutException.cs" />
+    <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/Utils/PrebuildSceneSetupAttribute.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/NUnitExtensions/Runner/DefaultTestWorkItem.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/Utils/FloatEqualityComparer.cs" />
   </ItemGroup>
@@ -426,6 +426,9 @@
     </Reference>
     <Reference Include="UnityEditor.AppleTV.Extensions">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.LinuxStandalone.Extensions">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>

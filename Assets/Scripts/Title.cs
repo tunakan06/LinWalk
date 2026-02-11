@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class Title : MonoBehaviour
 {
@@ -11,8 +12,8 @@ public class Title : MonoBehaviour
     [SerializeField] private float pulseSpeed = 1.5f;
     [SerializeField] private float pulseAmount = 0.05f;
 
-    // "Press Z to Start" テキストの点滅用
-    [SerializeField] private Text pressStartText;
+    // "Press Z to Start" テキストの点滅用（TextMeshPro対応）
+    [SerializeField] private TMP_Text pressStartText;
     [SerializeField] private float blinkSpeed = 2f;
 
     // シーン遷移時のフェードアウト用
@@ -66,7 +67,7 @@ public class Title : MonoBehaviour
             titleTransform.localScale = originalTitleScale * scale;
         }
 
-        // "Press Z to Start" テキストの点滅
+        // "Press Z to Start" テキストの点滅（TextMeshPro対応）
         if (pressStartText != null)
         {
             Color color = pressStartText.color;
