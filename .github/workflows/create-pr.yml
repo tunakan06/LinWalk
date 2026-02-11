@@ -1,0 +1,65 @@
+name: Create Title Pattern Background PR
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Create new branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b add-title-pattern-bg
+
+      - name: Add Editor script and README
+        run: |
+          mkdir -p Assets/Editor
+          cat > Assets/Editor/TitleScreenSetup.cs <<'CS'
+#if UNITY_EDITOR
+using UnityEngine;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+...
+#endif
+CS
+          cat > Assets/TitleBackground_README.md <<'MD'
+# Title Pattern Background — Usage
+This project includes a small editor utility...
+MD
+          git add Assets/Editor/TitleScreenSetup.cs Assets/TitleBackground_README.md
+          git commit -m "Add Editor tool to insert patterned RawImage background into title scene" || echo "No changes to commit"
+          git push --set-upstream origin add-title-pattern-bg
+
+      - id: create_pr
+        name: Create pull request via API
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const title = "Add Editor tool to insert patterned RawImage background into title scene";
+            const body = `概要
+タイトル画面を控えめに装飾するための Unity Editor メニューを追加します...
+`;
+            const pr = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: 'add-title-pattern-bg',
+              base: 'main',
+              title: title,
+              body: body
+            });
+            core.setOutput('pr_url', pr.data.html_url);
+
+      - name: Show PR URL
+        run: echo "PR created: ${{ steps.create_pr.outputs.pr_url }}"
