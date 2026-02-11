@@ -2,9 +2,17 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
+<<<<<<< HEAD
 /// プロシージャルなストライプ背景を生成するコンポーネント
 /// - RawImage にテクスチャを自動生成して割り当て
 /// - UV スクロールでアニメーション
+=======
+/// Simple procedural striped background:
+/// - Generates a repeatable Texture2D of stripes
+/// - Assigns it to the sibling RawImage.texture
+/// - Scrolls via RawImage.uvRect
+/// Works in Editor and Play mode (ExecuteAlways).
+>>>>>>> copilot/fix-npc-interaction-bug
 /// </summary>
 [ExecuteAlways]
 [DisallowMultipleComponent]
@@ -20,7 +28,11 @@ public class ProceduralStripedBG : MonoBehaviour
     public Color colorB = new Color(0f, 0f, 0f, 0f);
 
     [Header("Motion")]
+<<<<<<< HEAD
     public float scrollSpeed = 0.05f;
+=======
+    public float scrollSpeed = 0.05f; // uv units / second
+>>>>>>> copilot/fix-npc-interaction-bug
     public bool diagonalStripes = true;
 
     Texture2D tex;
@@ -36,6 +48,10 @@ public class ProceduralStripedBG : MonoBehaviour
 
     void OnDisable()
     {
+<<<<<<< HEAD
+=======
+        // avoid leaking textures in editor
+>>>>>>> copilot/fix-npc-interaction-bug
 #if UNITY_EDITOR
         if (tex != null && Application.isEditor && !Application.isPlaying)
         {
@@ -47,6 +63,10 @@ public class ProceduralStripedBG : MonoBehaviour
 
     void OnValidate()
     {
+<<<<<<< HEAD
+=======
+        // update in editor when properties change
+>>>>>>> copilot/fix-npc-interaction-bug
         EnsureRawImage();
         GenerateTexture();
         ApplyTexture();
@@ -64,9 +84,17 @@ public class ProceduralStripedBG : MonoBehaviour
 
     void GenerateTexture()
     {
+<<<<<<< HEAD
         int w = Mathf.Clamp(tileSize * Mathf.Max(1, widthTiles), 2, 4096);
         int h = Mathf.Clamp(tileSize * Mathf.Max(1, heightTiles), 2, 4096);
 
+=======
+        // compute size (clamped to reasonable limits)
+        int w = Mathf.Clamp(tileSize * Mathf.Max(1, widthTiles), 2, 4096);
+        int h = Mathf.Clamp(tileSize * Mathf.Max(1, heightTiles), 2, 4096);
+
+        // reuse if same size
+>>>>>>> copilot/fix-npc-interaction-bug
         if (tex != null && tex.width == w && tex.height == h) return;
 
         if (tex != null)
@@ -120,7 +148,13 @@ public class ProceduralStripedBG : MonoBehaviour
         if (raw == null) EnsureRawImage();
         if (raw == null) return;
 
+<<<<<<< HEAD
         uvOffset.x += scrollSpeed * Time.deltaTime;
+=======
+        // move uv offset horizontally
+        uvOffset.x += scrollSpeed * Time.deltaTime;
+        // keep offset bounded
+>>>>>>> copilot/fix-npc-interaction-bug
         uvOffset.x = uvOffset.x % 1f;
         Rect uv = raw.uvRect;
         uv.x = uvOffset.x;

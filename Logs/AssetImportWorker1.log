@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Unity Editor version:    2021.3.15f1 (e8e88683f834)
+=======
+Unity Editor version:    2021.3.18f1 (3129e69bc0c7)
+>>>>>>> copilot/fix-npc-interaction-bug
 Branch:                  2021.3/staging
 Build type:              Release
 Batch mode:              YES
@@ -11,7 +15,11 @@ Using pre-set license
 Pro License: YES
 
 COMMAND LINE ARGUMENTS:
+<<<<<<< HEAD
 /Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/MacOS/Unity
+=======
+/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MacOS/Unity
+>>>>>>> copilot/fix-npc-interaction-bug
 -adb2
 -batchMode
 -noUpm
@@ -22,7 +30,11 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
+<<<<<<< HEAD
 56606
+=======
+56078
+>>>>>>> copilot/fix-npc-interaction-bug
 Successfully changed project path to: /Users/koubekisei/LinWalk
 /Users/koubekisei/LinWalk
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,6 +66,7 @@ Successfully changed project path to: /Users/koubekisei/LinWalk
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [8312597568] Host "[IP] 192.168.3.21 [Port] 0 [Flags] 2 [Guid] 2066828295 [EditorId] 2066828295 [Version] 1048832 [Id] OSXEditor(0,koubekiseinoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [8312597568] Host "[IP] 192.168.3.21 [Port] 0 [Flags] 2 [Guid] 2066828295 [EditorId] 2066828295 [Version] 1048832 [Id] OSXEditor(0,koubekiseinoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
@@ -62,6 +75,16 @@ Refreshing native plugins compatible for Editor in 26.96 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.15f1 (e8e88683f834)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/Resources/UnitySubsystems
+=======
+Player connection [8312597568] Host "[IP] 192.168.3.21 [Port] 0 [Flags] 2 [Guid] 2308944089 [EditorId] 2308944089 [Version] 1048832 [Id] OSXEditor(0,koubekiseinoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8312597568] Host "[IP] 192.168.3.21 [Port] 0 [Flags] 2 [Guid] 2308944089 [EditorId] 2308944089 [Version] 1048832 [Id] OSXEditor(0,koubekiseinoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 23.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Resources/UnitySubsystems
+>>>>>>> copilot/fix-npc-interaction-bug
 [Subsystems] Discovering subsystems at path /Users/koubekisei/LinWalk/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
  preferred device: Apple M2 (high power)
@@ -70,6 +93,7 @@ Metal devices available: 1
 Using device Apple M2 (high power)
 Initializing Metal device caps: Apple M2
 Initialize mono
+<<<<<<< HEAD
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/MonoBleedingEdge/etc'
@@ -84,6 +108,22 @@ Register platform support module: /Applications/Unity/Hub/Editor/2021.3.15f1/Pla
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
 Registered in 0.002605 seconds.
+=======
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56927
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.001443 seconds.
+>>>>>>> copilot/fix-npc-interaction-bug
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
@@ -92,6 +132,7 @@ Native extension for WindowsStandalone target not found
 Native extension for AppleTV target not found
 Native extension for iOS target not found
 Native extension for Android target not found
+<<<<<<< HEAD
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 26.80 ms, found 3 plugins.
@@ -101,10 +142,23 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (432ms)
 		BeginReloadAssembly (56ms)
+=======
+Android Extension - Scanning For ADB Devices 129 ms
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 22.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.566 seconds
+Domain Reload Profiling:
+	ReloadAssembly (567ms)
+		BeginReloadAssembly (67ms)
+>>>>>>> copilot/fix-npc-interaction-bug
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 			CreateAndSetChildDomain (1ms)
 		EndReloadAssembly (308ms)
 			LoadAssemblies (61ms)
@@ -120,13 +174,34 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (46ms)
 				ProcessInitializeOnLoadMethodAttributes (24ms)
+=======
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (435ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (71ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (318ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (235ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (23ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (40ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+>>>>>>> copilot/fix-npc-interaction-bug
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.002571 seconds.
+=======
+Registered in 0.000629 seconds.
+>>>>>>> copilot/fix-npc-interaction-bug
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
@@ -135,6 +210,7 @@ Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -142,10 +218,20 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (690ms)
 		BeginReloadAssembly (181ms)
+=======
+Refreshing native plugins compatible for Editor in 0.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.484 seconds
+Domain Reload Profiling:
+	ReloadAssembly (484ms)
+		BeginReloadAssembly (70ms)
+>>>>>>> copilot/fix-npc-interaction-bug
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 			CreateAndSetChildDomain (125ms)
 		EndReloadAssembly (443ms)
 			LoadAssemblies (56ms)
@@ -161,6 +247,23 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (31ms)
 				ProcessInitializeOnLoadAttributes (145ms)
 				ProcessInitializeOnLoadMethodAttributes (14ms)
+=======
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (354ms)
+			LoadAssemblies (50ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (105ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (156ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (23ms)
+				ProcessInitializeOnLoadAttributes (103ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+>>>>>>> copilot/fix-npc-interaction-bug
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -168,6 +271,7 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+<<<<<<< HEAD
 Launching external process: /Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.35 ms, found 3 plugins.
@@ -176,6 +280,16 @@ Unloading 2160 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 35 unused Assets / (118.8 KB). Loaded Objects now: 2638.
 Memory consumption went from 77.9 MB to 77.8 MB.
 Total: 2.759875 ms (FindLiveObjects: 0.118792 ms CreateObjectMapping: 0.050875 ms MarkObjects: 2.504708 ms  DeleteObjects: 0.084875 ms)
+=======
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1840 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (244.0 KB). Loaded Objects now: 2321.
+Memory consumption went from 79.6 MB to 79.3 MB.
+Total: 2.232291 ms (FindLiveObjects: 0.071375 ms CreateObjectMapping: 0.025542 ms MarkObjects: 2.084375 ms  DeleteObjects: 0.050625 ms)
+>>>>>>> copilot/fix-npc-interaction-bug
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -188,11 +302,25 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.000948 seconds.
 Begin MonoManager ReloadAssembly
 Thread 0x3283ab000 may have been prematurely finalized
+=======
+Received Import Request.
+  Time since last request: 81985.185427 seconds.
+  path: Assets/Scripts/ProceduralStripedBG.cs
+  artifactKey: Guid(1b31ac2a376654a99bedd42f161a9f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralStripedBG.cs using Guid(1b31ac2a376654a99bedd42f161a9f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '346ff0f242619c60de2dfb62339da8de') in 0.068523 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000694 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x17c34f000 may have been prematurely finalized
+>>>>>>> copilot/fix-npc-interaction-bug
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for AppleTV target not found
@@ -200,6 +328,7 @@ Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -226,17 +355,121 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (32ms)
 				ProcessInitializeOnLoadAttributes (138ms)
 				ProcessInitializeOnLoadMethodAttributes (13ms)
+=======
+Refreshing native plugins compatible for Editor in 0.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.450 seconds
+Domain Reload Profiling:
+	ReloadAssembly (451ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (333ms)
+			LoadAssemblies (29ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (101ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (143ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (22ms)
+				ProcessInitializeOnLoadAttributes (92ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+>>>>>>> copilot/fix-npc-interaction-bug
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2141 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 16 unused Assets / (94.4 KB). Loaded Objects now: 2641.
 Memory consumption went from 82.6 MB to 82.5 MB.
 Total: 2.425000 ms (FindLiveObjects: 0.091875 ms CreateObjectMapping: 0.034375 ms MarkObjects: 2.279167 ms  DeleteObjects: 0.019291 ms)
+=======
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1821 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 13 unused Assets / (94.5 KB). Loaded Objects now: 2324.
+Memory consumption went from 81.5 MB to 81.4 MB.
+Total: 2.235416 ms (FindLiveObjects: 0.074500 ms CreateObjectMapping: 0.028458 ms MarkObjects: 2.109208 ms  DeleteObjects: 0.022792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 23.190522 seconds.
+  path: Assets/Scripts/ProceduralStripedBG.cs
+  artifactKey: Guid(1b31ac2a376654a99bedd42f161a9f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralStripedBG.cs using Guid(1b31ac2a376654a99bedd42f161a9f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e05b4aab6f858d01b3156ddf2f0c4c48') in 0.004639 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000542 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16fa5f000 may have been prematurely finalized
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.473 seconds
+Domain Reload Profiling:
+	ReloadAssembly (474ms)
+		BeginReloadAssembly (67ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (357ms)
+			LoadAssemblies (29ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (107ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (155ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (25ms)
+				ProcessInitializeOnLoadAttributes (95ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1821 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 13 unused Assets / (94.6 KB). Loaded Objects now: 2327.
+Memory consumption went from 81.5 MB to 81.4 MB.
+Total: 2.113209 ms (FindLiveObjects: 0.085458 ms CreateObjectMapping: 0.031417 ms MarkObjects: 1.973792 ms  DeleteObjects: 0.021958 ms)
+>>>>>>> copilot/fix-npc-interaction-bug
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -251,9 +484,15 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.000839 seconds.
 Begin MonoManager ReloadAssembly
 Thread 0x3283ab000 may have been prematurely finalized
+=======
+Registered in 0.000474 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16fa5f000 may have been prematurely finalized
+>>>>>>> copilot/fix-npc-interaction-bug
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for AppleTV target not found
@@ -261,6 +500,7 @@ Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -268,10 +508,20 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (565ms)
 		BeginReloadAssembly (103ms)
+=======
+Refreshing native plugins compatible for Editor in 0.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.475 seconds
+Domain Reload Profiling:
+	ReloadAssembly (475ms)
+		BeginReloadAssembly (87ms)
+>>>>>>> copilot/fix-npc-interaction-bug
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 			CreateAndSetChildDomain (50ms)
 		EndReloadAssembly (408ms)
 			LoadAssemblies (40ms)
@@ -287,17 +537,43 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (31ms)
 				ProcessInitializeOnLoadAttributes (128ms)
 				ProcessInitializeOnLoadMethodAttributes (13ms)
+=======
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (339ms)
+			LoadAssemblies (35ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (105ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (143ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (23ms)
+				ProcessInitializeOnLoadAttributes (91ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+>>>>>>> copilot/fix-npc-interaction-bug
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2141 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 16 unused Assets / (94.5 KB). Loaded Objects now: 2644.
 Memory consumption went from 88.5 MB to 88.4 MB.
 Total: 2.349959 ms (FindLiveObjects: 0.092667 ms CreateObjectMapping: 0.033291 ms MarkObjects: 2.201542 ms  DeleteObjects: 0.022084 ms)
+=======
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1821 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 13 unused Assets / (94.5 KB). Loaded Objects now: 2330.
+Memory consumption went from 81.5 MB to 81.5 MB.
+Total: 2.017500 ms (FindLiveObjects: 0.061375 ms CreateObjectMapping: 0.023875 ms MarkObjects: 1.913708 ms  DeleteObjects: 0.017959 ms)
+>>>>>>> copilot/fix-npc-interaction-bug
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -310,6 +586,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.000921 seconds.
@@ -492,3 +769,10 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+=======
+Received Import Request.
+  Time since last request: 122.649929 seconds.
+  path: Assets/Scripts/ProceduralStripedBG.cs
+  artifactKey: Guid(1b31ac2a376654a99bedd42f161a9f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralStripedBG.cs using Guid(1b31ac2a376654a99bedd42f161a9f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c9f58eb88901a9c86f734ae44a8d6c9') in 0.003807 seconds 
+>>>>>>> copilot/fix-npc-interaction-bug
