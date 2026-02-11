@@ -1,47 +1,32 @@
 ﻿<Properties StartupConfiguration="{22C0F9D2-910C-0E5A-841E-74B0C3E08FEE}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="69be6cb8-8403-40cd-ae64-2838f42eb5ae" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Utage/Scripts/ADV/DataManager/AdvChapterData.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/People.cs">
     <Files>
-      <File FileName="Assets/Scripts/CreateRandomPosition.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Item.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CreateRandomPosition.cs" />
+      <File FileName="Assets/Scripts/Item.cs" />
       <File FileName="Assets/Scripts/GameManager.cs" />
-      <File FileName="Assets/Scripts/People.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMove.cs" />
+      <File FileName="Assets/Scripts/People.cs" Line="63" Column="14" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" Line="78" Column="10" />
       <File FileName="Assets/Scripts/Teddy.cs" />
       <File FileName="Assets/Scripts/Title.cs" />
       <File FileName="Assets/Scripts/Woman.cs" />
-      <File FileName="Assets/Utage/Scripts/Version.cs" Line="1" Column="1" />
-      <File FileName="Assets/Utage/Scripts/ADV/Command/AdvCommand.cs" Line="367" Column="3" />
-      <File FileName="Assets/Utage/Scripts/ADV/Command/AdvCommandError.cs" Line="15" Column="3" />
-      <File FileName="Assets/Utage/Scripts/ADV/Command/AdvCommandKeyword.cs" Line="33" Column="1" />
-      <File FileName="Assets/Utage/Scripts/ADV/Command/AdvCommandParser.cs" Line="33" Column="37" />
-      <File FileName="Assets/Utage/Scripts/ADV/Command/AdvCustomCommandManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Utage/Scripts/ADV/DataManager/AdvChapterData.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="LinWalk">
+          <Node name="LinWalk" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Utage" expanded="True">
-                <Node name="Scripts" expanded="True">
-                  <Node name="ADV" expanded="True">
-                    <Node name="DataManager" expanded="True">
-                      <Node name="AdvChapterData.cs" selected="True" />
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0f12f848-64dd-4ea8-ad5c-9b1f8dd5bff4" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
