@@ -10,28 +10,33 @@ jobs:
   create-pr:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (not strictly required)
         uses: actions/checkout@v4
         with:
           persist-credentials: true
 
-      - name: Setup git and branch
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin
-          if git ls-remote --exit-code --heads origin add-title-pattern-bg; then
-            git checkout -B add-title-pattern-bg origin/add-title-pattern-bg
-          else
-            git checkout -b add-title-pattern-bg
-          fi
+      - name: Create files and PR via GitHub API
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const branch = 'add-title-pattern-bg';
+            const base = 'main';
 
-      - name: Add files and push
-        run: |
-          mkdir -p Assets/Editor
+            // Ensure branch exists (create from main if needed)
+            const mainRef = await github.rest.git.getRef({ owner, repo, ref: `heads/${base}` });
+            const mainSha = mainRef.data.object.sha;
+            try {
+              await github.rest.git.getRef({ owner, repo, ref: `heads/${branch}` });
+              core.info(`Branch ${branch} already exists`);
+            } catch (err) {
+              await github.rest.git.createRef({ owner, repo, ref: `refs/heads/${branch}`, sha: mainSha });
+              core.info(`Created branch ${branch} from ${base}`);
+            }
 
-          cat > Assets/Editor/TitleScreenSetup.cs <<'CS'
-#if UNITY_EDITOR
+            // File contents (use backtick strings safely inside JS)
+            const csContent = `#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -121,49 +126,64 @@ public static class TitleScreenSetup
         Debug.Log("[TitleScreenSetup] Added TitlePattern_Background to scene: " + activeScene.name);
     }
 }
-#endif
-CS
+#endif`;
 
-          cat > Assets/TitleBackground_README.md <<'MD'
-# Title Pattern Background — Usage
+            const mdContent = `# Title Pattern Background — Usage
 
 This project includes a small editor utility that adds a subtle, scrollable patterned background to a Canvas in your title scene.
 
 How to run
 1. Open the scene you want to modify (the title screen) in Unity Editor.
-2. From the top menu choose: Tools → Title Screen → Add Pattern Background
+2. From the top menu choose: Tools → Title Screen ��� Add Pattern Background
    - If no Canvas exists one will be created.
-   - A GameObject named `TitlePattern_Background` (RawImage + ProceduralStripedBG) will be added as the first child of the Canvas.
+   - A GameObject named \`TitlePattern_Background\` (RawImage + ProceduralStripedBG) will be added as the first child of the Canvas.
    - The scene will be marked dirty and saved automatically.
 
 Tweak appearance
-- Select the `TitlePattern_Background` GameObject in the Hierarchy.
-- Inspect the `ProceduralStripedBG` component and adjust:
-  - `tileSize`, `widthTiles`, `heightTiles` — pattern density
-  - `colorA` (alpha controls subtlety) and `colorB`
-  - `scrollSpeed` — how fast the pattern moves
-  - `diagonalStripes` — toggle diagonal/vertical stripes
+- Select the \`TitlePattern_Background\` GameObject in the Hierarchy.
+- Inspect the \`ProceduralStripedBG\` component and adjust:
+  - \`tileSize\`, \`widthTiles\`, \`heightTiles\` — pattern density
+  - \`colorA\` (alpha controls subtlety) and \`colorB\`
+  - \`scrollSpeed\` — how fast the pattern moves
+  - \`diagonalStripes\` — toggle diagonal/vertical stripes
 
 Notes
-- The RawImage created has `raycastTarget = false` so it won't block UI interactions.
+- The RawImage created has \`raycastTarget = false\` so it won't block UI interactions.
 - This tool modifies the currently open scene in the Editor — it does not change build settings.
-MD
+`;
 
-          git add Assets/Editor/TitleScreenSetup.cs Assets/TitleBackground_README.md
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Add Editor tool to insert patterned RawImage background into title scene"
-            git push --set-upstream origin add-title-pattern-bg
-          fi
+            // helper to create/update file in branch
+            async function upsert(path, content, message) {
+              const encoded = Buffer.from(content).toString('base64');
+              try {
+                const existing = await github.rest.repos.getContent({ owner, repo, path, ref: branch });
+                await github.rest.repos.createOrUpdateFileContents({
+                  owner, repo, path, message, content: encoded, branch, sha: existing.data.sha
+                });
+                core.info(`Updated ${path}`);
+              } catch (err) {
+                if (err.status === 404) {
+                  await github.rest.repos.createOrUpdateFileContents({
+                    owner, repo, path, message, content: encoded, branch
+                  });
+                  core.info(`Created ${path}`);
+                } else {
+                  throw err;
+                }
+              }
+            }
 
-      - name: Create pull request
-        uses: peter-evans/create-pull-request@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: add-title-pattern-bg
-          title: Add Editor tool to insert patterned RawImage background into title scene
-          body: |
-            概要
-            タイトル画面を控えめに装飾するための Unity Editor メニューを追加します。メニュー実行により、開いているシーンの Canvas に対してフルスクリーンの RawImage（ProceduralStripedBG コンポーネント付き）を挿入できます。
-          base: main
+            await upsert('Assets/Editor/TitleScreenSetup.cs', csContent, 'Add Editor tool script for title background');
+            await upsert('Assets/TitleBackground_README.md', mdContent, 'Add README for title background utility');
+
+            // create PR if none exists
+            const { data: prs } = await github.rest.pulls.list({ owner, repo, head: `${owner}:${branch}`, base });
+            if (prs.length > 0) {
+              console.log('PR already exists: ' + prs[0].html_url);
+            } else {
+              const pr = await github.rest.pulls.create({
+                owner, repo, head: branch, base, title: 'Add Editor tool to insert patterned RawImage background into title scene',
+                body: 'Add Editor menu to insert patterned RawImage background into the title scene Canvas.'
+              });
+              console.log('Created PR: ' + pr.data.html_url);
+            }
