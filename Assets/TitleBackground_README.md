@@ -18,7 +18,7 @@ The **Add Pattern Background** tool creates a full-screen, subtle striped patter
    - Create a Canvas if one doesn't exist (configured for Screen Space - Overlay)
    - Add a "TitlePattern_Background" GameObject with RawImage and ProceduralStripedBG components
    - Configure the pattern with sensible defaults
-   - Save the scene automatically
+   - Prompt you to save the scene
 4. The newly created background will be selected in the Hierarchy
 
 ## Customizing the Pattern
@@ -48,7 +48,7 @@ After running the tool, you can customize the pattern by selecting the "TitlePat
 - The background is placed as the first child of the Canvas, ensuring it renders behind other UI elements
 - The RawImage's `raycastTarget` is disabled so it won't interfere with UI interactions
 - If a "TitlePattern_Background" already exists in the scene, the tool will ask if you want to replace it
-- The tool automatically saves the scene after adding the background
+- After adding the background, you'll be prompted to save the scene
 
 ## Troubleshooting
 

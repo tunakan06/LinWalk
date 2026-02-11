@@ -26,7 +26,7 @@ public static class TitleScreenSetup
         }
 
         // Find or create Canvas
-        Canvas canvas = FindObjectOfType<Canvas>();
+        Canvas canvas = GameObject.FindFirstObjectByType<Canvas>();
         if (canvas == null)
         {
             // Create a new Canvas
@@ -105,16 +105,29 @@ public static class TitleScreenSetup
         // Mark the scene as dirty (modified)
         EditorSceneManager.MarkSceneDirty(activeScene);
         
-        // Save the scene
-        bool saved = EditorSceneManager.SaveScene(activeScene);
+        // Ask user if they want to save the scene
+        bool shouldSave = EditorUtility.DisplayDialog(
+            "Save Scene?",
+            $"Pattern background has been added to scene '{activeScene.name}'.\n\nWould you like to save the scene now?",
+            "Save",
+            "Don't Save"
+        );
         
-        if (saved)
+        if (shouldSave)
         {
-            Debug.Log($"Successfully added pattern background to scene '{activeScene.name}' and saved the scene.");
+            bool saved = EditorSceneManager.SaveScene(activeScene);
+            if (saved)
+            {
+                Debug.Log($"Successfully added pattern background to scene '{activeScene.name}' and saved the scene.");
+            }
+            else
+            {
+                Debug.LogWarning($"Pattern background added to scene '{activeScene.name}', but scene could not be saved. Please save manually.");
+            }
         }
         else
         {
-            Debug.LogWarning($"Pattern background added to scene '{activeScene.name}', but scene was not saved. Please save manually.");
+            Debug.Log($"Pattern background added to scene '{activeScene.name}'. Remember to save the scene manually.");
         }
         
         // Select the newly created object in the hierarchy
