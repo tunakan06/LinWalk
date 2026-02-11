@@ -42,9 +42,20 @@ public class Title : MonoBehaviour
 
     private Vector3 originalTitleScale;
     private bool isFading = false;
+    private Camera mainCamera;
+    private int gradientColorCount;
 
     void Start()
     {
+        // メインカメラのキャッシュ
+        mainCamera = Camera.main;
+
+        // グラデーションカラー数のキャッシュ
+        if (gradientColors != null)
+        {
+            gradientColorCount = gradientColors.Length;
+        }
+
         // タイトルのオリジナルスケールを保存
         if (titleTransform != null)
         {
@@ -75,14 +86,13 @@ public class Title : MonoBehaviour
     void Update()
     {
         // 背景色のグラデーション変化
-        if (gradientColors != null && gradientColors.Length > 0 && Camera.main != null)
+        if (mainCamera != null && gradientColorCount > 0)
         {
             float t = Time.time * gradientSpeed;
-            int colorCount = gradientColors.Length;
-            int currentIndex = Mathf.FloorToInt(t) % colorCount;
-            int nextIndex = (currentIndex + 1) % colorCount;
+            int currentIndex = Mathf.FloorToInt(t) % gradientColorCount;
+            int nextIndex = (currentIndex + 1) % gradientColorCount;
             float lerpFactor = t - Mathf.Floor(t);
-            Camera.main.backgroundColor = Color.Lerp(gradientColors[currentIndex], gradientColors[nextIndex], lerpFactor);
+            mainCamera.backgroundColor = Color.Lerp(gradientColors[currentIndex], gradientColors[nextIndex], lerpFactor);
         }
 
         // タイトルテキストのパルスアニメーション
