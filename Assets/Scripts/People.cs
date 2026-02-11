@@ -55,15 +55,18 @@ public class People : MonoBehaviour
         {
             StartCoroutine("CloseSB");
             gameManager.CloseMessageWindow();
+            SetPlayerTalking(false);
         }
 
         if (speechBubbleOb.activeSelf == true)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                SetPlayerTalking(true);
+
                 var diff = (player.transform.position - transform.position).normalized;
                 transform.rotation = Quaternion.LookRotation(diff);
-                
+
                 if (gameManager.messageWindow.activeSelf == false)
                 {
                     gameManager.DisplayMessageWindow(talkingWords, this.gameObject.name);
@@ -72,9 +75,33 @@ public class People : MonoBehaviour
                 else
                 {
                     gameManager.ProceedingTalk(audioSource, audioPitch);
+                    if (gameManager.charaTalkingWords.Count == 0)
+                    {
+                        // 次のフレームまで待ってから解除（同フレームのお辞儀を防ぐ）
+                        StartCoroutine(DelayedRelease());
+                    }
                 }
             }
         }
+    }
+
+    /// <summary>
+    /// 1フレーム待ってから会話フラグを解除する
+    /// </summary>
+    private IEnumerator DelayedRelease()
+    {
+        yield return null;
+        SetPlayerTalking(false);
+    }
+
+    /// <summary>
+    /// プレイヤーの会話フラグを設定する
+    /// </summary>
+    private void SetPlayerTalking(bool value)
+    {
+        if (player == null) return;
+        PlayerMove pm = player.GetComponent<PlayerMove>();
+        if (pm != null) pm.isTalking = value;
     }
 
     /// <summary>
