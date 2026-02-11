@@ -22,6 +22,14 @@ public static class TitleScreenSetup
             return;
         }
 
+        // Inform user about auto-save
+        if (!EditorUtility.DisplayDialog("Add Pattern Background",
+            "This will add a TitlePattern_Background to the active scene's Canvas and save the scene.\n\nContinue?",
+            "Yes", "Cancel"))
+        {
+            return;
+        }
+
         // Find or create Canvas
         Canvas canvas = Object.FindObjectOfType<Canvas>();
         GameObject canvasGO;
