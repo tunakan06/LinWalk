@@ -28,36 +28,28 @@ public class Title : MonoBehaviour
 
     // 背景色のグラデーション変化用
     [Header("Background Gradient")]
-    [SerializeField] private Color[] gradientColors = new Color[]
-    {
-        new Color(0.71f, 0.52f, 0.9f),   // 柔らかいラベンダー
-        new Color(0.53f, 0.81f, 0.92f),  // 淡い水色
-        new Color(0.6f, 0.9f, 0.75f),    // ミントグリーン
-        new Color(1f, 0.8f, 0.7f),       // 淡いピーチ
-        new Color(0.95f, 0.6f, 0.73f),   // ソフトピンク
-        new Color(0.98f, 0.7f, 0.6f),    // 淡いサーモン
-        new Color(0.8f, 0.7f, 0.9f)      // ソフトラベンダー
-    };
-    [SerializeField] private float gradientSpeed = 0.5f;
+    [SerializeField] private Color backgroundColorA = new Color(0.20f, 0.55f, 0.95f);
+    [SerializeField] private Color backgroundColorB = new Color(0.15f, 0.80f, 0.45f);
+    [SerializeField] private float gradientSpeed = 0.12f;
+    [SerializeField] private bool forceBlueGreenOnStart = true;
 
     private Vector3 originalTitleScale;
     private bool isFading = false;
     private Camera mainCamera;
-    private int gradientColorCount;
 
     void Start()
     {
+        if (forceBlueGreenOnStart)
+        {
+            backgroundColorA = new Color(0.20f, 0.55f, 0.95f);
+            backgroundColorB = new Color(0.15f, 0.80f, 0.45f);
+        }
+
         // メインカメラのキャッシュ
         mainCamera = Camera.main;
         if (mainCamera == null)
         {
             Debug.LogWarning("[Title] Main camera not found. Background gradient will not be applied.");
-        }
-
-        // グラデーションカラー数のキャッシュ
-        if (gradientColors != null)
-        {
-            gradientColorCount = gradientColors.Length;
         }
 
         // タイトルのオリジナルスケールを保存
@@ -90,13 +82,10 @@ public class Title : MonoBehaviour
     void Update()
     {
         // 背景色のグラデーション変化
-        if (mainCamera != null && gradientColorCount > 0)
+        if (mainCamera != null)
         {
-            float t = Time.time * gradientSpeed;
-            int currentIndex = Mathf.FloorToInt(t) % gradientColorCount;
-            int nextIndex = (currentIndex + 1) % gradientColorCount;
-            float lerpFactor = t - Mathf.Floor(t);
-            mainCamera.backgroundColor = Color.Lerp(gradientColors[currentIndex], gradientColors[nextIndex], lerpFactor);
+            float t = Mathf.PingPong(Time.time * gradientSpeed, 1f);
+            mainCamera.backgroundColor = Color.Lerp(backgroundColorA, backgroundColorB, t);
         }
 
         // タイトルテキストのパルスアニメーション
