@@ -20,14 +20,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin
-          # if remote branch exists, base on it; otherwise create new
           if git ls-remote --exit-code --heads origin add-title-pattern-bg; then
             git checkout -B add-title-pattern-bg origin/add-title-pattern-bg
           else
             git checkout -b add-title-pattern-bg
           fi
 
-      - name: Add Editor script and README
+      - name: Add files and push
         run: |
           mkdir -p Assets/Editor
 
