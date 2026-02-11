@@ -1,19 +1,21 @@
-# Unity自動生成フォルダ
-Library/
-Temp/
-Logs/
-obj/
+# 1. masterブランチに戻る
+git checkout master
 
-# ビルド出力
-Build/
-Builds/
+# 2. .gitignore に追加
+echo "*.csproj" >> .gitignore
+echo "*.sln" >> .gitignore
+echo "Library/" >> .gitignore
+echo "Temp/" >> .gitignore
+echo "Logs/" >> .gitignore
 
-# IDE生成ファイル
-*.csproj
-*.sln
-*.suo
-*.user
-*.pidb
-*.booproj
-*.svd
-*.pdb
+# 3. 追跡を解除
+git rm -r --cached Library/
+git rm --cached *.csproj
+git rm --cached *.sln
+
+# 4. コミット
+git add .gitignore
+git commit -m "Unity自動生成ファイルをgit管理から除外"
+
+# 5. プッシュ
+git push
