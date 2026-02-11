@@ -1,0 +1,19 @@
+# Unity自動生成フォルダ
+Library/
+Temp/
+Logs/
+obj/
+
+# ビルド出力
+Build/
+Builds/
+
+# IDE生成ファイル
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
