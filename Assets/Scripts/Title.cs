@@ -26,11 +26,40 @@ public class Title : MonoBehaviour
     // BGM用
     [SerializeField] private AudioSource bgmSource;
 
+    // 背景色のグラデーション変化用
+    [Header("Background Gradient")]
+    [SerializeField] private Color[] gradientColors = new Color[]
+    {
+        new Color(0.5f, 0f, 0.5f),    // 紫
+        new Color(0f, 0f, 1f),        // 青
+        new Color(0f, 1f, 1f),        // シアン
+        new Color(0f, 1f, 0f),        // 緑
+        new Color(1f, 1f, 0f),        // 黄
+        new Color(1f, 0.5f, 0f),      // オレンジ
+        new Color(1f, 0.4f, 0.7f)     // ピンク
+    };
+    [SerializeField] private float gradientSpeed = 0.5f;
+
     private Vector3 originalTitleScale;
     private bool isFading = false;
+    private Camera mainCamera;
+    private int gradientColorCount;
 
     void Start()
     {
+        // メインカメラのキャッシュ
+        mainCamera = Camera.main;
+        if (mainCamera == null)
+        {
+            Debug.LogWarning("[Title] Main camera not found. Background gradient will not be applied.");
+        }
+
+        // グラデーションカラー数のキャッシュ
+        if (gradientColors != null)
+        {
+            gradientColorCount = gradientColors.Length;
+        }
+
         // タイトルのオリジナルスケールを保存
         if (titleTransform != null)
         {
@@ -60,6 +89,16 @@ public class Title : MonoBehaviour
 
     void Update()
     {
+        // 背景色のグラデーション変化
+        if (mainCamera != null && gradientColorCount > 0)
+        {
+            float t = Time.time * gradientSpeed;
+            int currentIndex = Mathf.FloorToInt(t) % gradientColorCount;
+            int nextIndex = (currentIndex + 1) % gradientColorCount;
+            float lerpFactor = t - Mathf.Floor(t);
+            mainCamera.backgroundColor = Color.Lerp(gradientColors[currentIndex], gradientColors[nextIndex], lerpFactor);
+        }
+
         // タイトルテキストのパルスアニメーション
         if (titleTransform != null)
         {
